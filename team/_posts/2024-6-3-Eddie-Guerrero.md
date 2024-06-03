@@ -7,7 +7,7 @@ handle:
 email: eddieguerrero@tamu.edu
 github: https://github.com/EddieG10
 scholar: 
-image: /assets/images/team/
+image: /assets/images/team/head_Eddie.JPG
 cv:
 alum: false
 ---
