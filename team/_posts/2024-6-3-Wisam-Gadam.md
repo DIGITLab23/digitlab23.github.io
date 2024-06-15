@@ -7,7 +7,7 @@ handle:
 email: wisam.gadam@tamu.edu
 github: 
 scholar: 
-image: /assets/images/team/head_Wisam.jpg
+image: /assets/images/team/head_wisam.jpg
 cv:
 alum: false
 ---
