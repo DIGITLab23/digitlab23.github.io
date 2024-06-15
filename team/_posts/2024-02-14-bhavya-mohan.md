@@ -1,7 +1,7 @@
 ---
 layout: member
 title: "Bhavya Mohan"
-position: Graduate Student
+position: MS Student
 nickname: Bhavya
 handle: 
 email: bhavya_0108@tamu.edu
