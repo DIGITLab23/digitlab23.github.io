@@ -13,6 +13,7 @@ tags: [conference]
 * [International Design Conference (DESIGN)](https://www.designconference.org/)
 * [International Conference on Engineering Design (ICED)](https://iced.designsociety.org/)
 * International Conference on Design Computing and Cognition (DCC)
+* [Design Research Society (DRS) conference](https://www.designresearchsociety.org/cpages/conferences) (biennially)
 
 # AI/ML
 * [International Conference on Machine Learning (ICML)](https://icml.cc/)
