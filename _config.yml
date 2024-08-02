@@ -165,3 +165,5 @@ JB :
 plugins:
   - jekyll-redirect-from
   
+# _config.yml
+excerpt_separator: <!--more-->
