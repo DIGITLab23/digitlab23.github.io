@@ -8,7 +8,7 @@ category: news
 tags: [update]
 ---
 
-Our lab is thrilled to announce the successful completion of the [TAMUQ Summer Research Internship Program](https://www.qatar.tamu.edu/students/aggiesabroad/tsre-qatar-texas) and the [Summer Research Experience for Undergraduates Program](https://engineering.tamu.edu/admissions-and-aid/undergraduate-summer-research-grants/index.html) for 2024. This year, we had the pleasure of hosting two outstanding interns, [Ms. Wisam Gadam](https://digitlab23.github.io/team/Wisam-Gadam) and [Mr. Eddie Guerrero](https://digitlab23.github.io/team/Eddie-Guerrero), who have significantly contributed to our research endeavors. Wisam has been working on Prior-Data Fitted Networks (PFNs) and its application to generative inverse design, while Eddie focused on predicting material properties of metamaterials for manufacturing uncertainty quantification applications.
+Our lab is thrilled to announce the successful completion of the [TAMUQ Summer Research Internship Program](https://www.qatar.tamu.edu/students/aggiesabroad/tsre-qatar-texas) and the [Summer Research Experience for Undergraduates Program](https://engineering.tamu.edu/admissions-and-aid/undergraduate-summer-research-grants/index.html) for 2024. This year, we had the pleasure of hosting two outstanding interns, [Ms. Wisam Gadam](https://digitlab23.github.io/team/Wisam-Gadam) and [Mr. Eddie Guerrero](https://digitlab23.github.io/team/Eddie-Guerrero), who have significantly contributed to our research endeavors. Wisam has been working on Prior-Data Fitted Networks (PFNs) and their application to generative inverse design, while Eddie focused on predicting material properties of metamaterials for manufacturing uncertainty quantification applications.
 
 <!--more-->
 
