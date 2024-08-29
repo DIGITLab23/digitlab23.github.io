@@ -7,7 +7,7 @@ handle:
 email: vinaychandra@tamu.edu
 github: vinaychandra1999
 scholar: 
-image: /assets/images/team/head_vinay.JPG
+image: /assets/images/team/head_vinay.jpg
 cv:
 alum: false
 ---
