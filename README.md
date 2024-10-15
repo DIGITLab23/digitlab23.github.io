@@ -26,3 +26,7 @@
    ```bash
    hugo server -D
    ```
+   
+## Host the website on GitHub pages
+
+Follow the [instructions](https://gohugo.io/hosting-and-deployment/hosting-on-github/).
