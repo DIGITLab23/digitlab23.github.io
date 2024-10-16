@@ -15,6 +15,8 @@ In the Design Innovation & Generative InTelligence (DIGIT) Lab, we develop advan
 
 ![alt text](../../assets/media/landing_page_image.png)
 
+Engineering design problems span a wide range of domain-specific contexts--such as aerospace (e.g., designing aerodynamic shapes and structures), materials science (e.g., designing new materials and metamaterials), and robotics (e.g., designing soft actuators). Our research **abstracts these domain-specific problems and reformulates them as mathematical problems**, developing AI-driven design methodologies to solve them while incorporating domain knowledge when needed.
+
 Our methodologies usually follow a **"generative"** paradigm, where AI learns to generate design solutions by modeling their underlying distributions and capturing uncertainties. Our goal is to leverage AI and ML to improve **efficiency**, stimulate **creativity**, and uncover **new knowledge and insights** in design processes, while ensuring the **generalizability** and **trustworthiness** of these methods. 
 
 For more information, you can explore our [**paper collection**](/publication/) or check out our [**open-source code**](https://www.github.com/DIGITLab23).
