@@ -39,8 +39,8 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://github.com/pcdgan/PcDGAN'
-url_code: ''
+url_pdf: 'files/papers/2106.03620.pdf'
+url_code: 'https://github.com/pcdgan/PcDGAN'
 url_dataset: ''
 url_poster: ''
 url_project: ''
