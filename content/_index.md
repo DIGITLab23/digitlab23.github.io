@@ -14,7 +14,7 @@ sections:
       text: |
         <br>
         
-        In the **D**esign **I**nnovation & **G**enerative **I**n**T**elligence (DIGIT) Lab, we develop advanced **AI and machine learning** methods for engineering design, targeting some of today's most challenging problems in **design ideation**, **design automation**, and **design for manufacturing**.
+        In the **D**esign **I**nnovation & **G**enerative **I**n**T**elligence (DIGIT) Lab, we develop advanced **AI and machine learning** methods for engineering design, targeting some of today's most challenging problems in **design ideation** (How can AI help us generate new ideas?), **design automation** (How can AI automate the design process?), and **design for manufacturing** (How can AI account for the manufacturing process?).
 
   
   - block: markdown
