@@ -17,6 +17,6 @@ To express your interest, please email Dr. Wei Chen at [w.chen@tamu.edu](mailto:
 * Your CV
 * Transcript(s)
 
-Please put **"DIGIT PhD Position"** in the subject line of your email.
+Please put **"DIGIT Lab PhD Position"** in the subject line of your email.
 
 ![alt text](group_photo.jpg)
