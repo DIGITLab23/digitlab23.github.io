@@ -30,9 +30,9 @@ abstract: Inspired by the recent achievements of machine learning in diverse dom
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/145/3/031704/1147447/t-METASET-Task-Aware-Acquisition-of-Metamaterial"
 url_pdf: 'files/papers/2202.10565.pdf'
 url_code: ''
 url_dataset: ''

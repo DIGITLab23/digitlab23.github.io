@@ -34,9 +34,9 @@ tags: []
 featured: false
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links:
+- name: Link
+  url: https://arc.aiaa.org/doi/10.2514/6.2021-1690
 
 url_pdf: 'files/papers/2101.02744.pdf'
 url_code: ''

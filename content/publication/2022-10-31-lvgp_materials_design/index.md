@@ -29,9 +29,9 @@ abstract: Data-driven design shows the promise of accelerating materials discove
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://www.nature.com/articles/s41598-022-23431-2"
 url_pdf: 'files/papers/2207.04994.pdf'
 url_code: ''
 url_dataset: ''

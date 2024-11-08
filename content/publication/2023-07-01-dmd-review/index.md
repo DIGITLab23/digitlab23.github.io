@@ -33,9 +33,9 @@ abstract: Growing materials data and data-driven informatics drastically promote
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://onlinelibrary.wiley.com/doi/10.1002/adma.202305254"
 url_pdf: 'files/papers/2307.05506.pdf'
 url_code: ''
 url_dataset: ''

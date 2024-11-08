@@ -35,9 +35,9 @@ tags: []
 featured: false
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links:
+- name: Link
+  url: https://dl.acm.org/doi/10.1145/3447548.3467414
 
 url_pdf: 'files/papers/2106.03620.pdf'
 url_code: 'https://github.com/pcdgan/PcDGAN'

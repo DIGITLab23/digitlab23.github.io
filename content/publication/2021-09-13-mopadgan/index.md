@@ -26,9 +26,9 @@ abstract: Multi-objective optimization is key to solving many Engineering Design
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://www.sciencedirect.com/science/article/pii/S1568494621008310?via%3Dihub"
 url_pdf: 'files/papers/MOPadGAN_ASC__ArXiv_.pdf'
 url_code: 'https://github.com/wchen459/MO-PaDGAN-Optimization'
 url_dataset: ''

@@ -27,9 +27,9 @@ abstract: Global optimization of aerodynamic shapes usually requires a large num
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://arc.aiaa.org/doi/10.2514/1.J059317"
 url_pdf: 'files/papers/1.j059317.pdf'
 url_code: 'https://github.com/IDEALLab/bezier-gan'
 url_dataset: ''

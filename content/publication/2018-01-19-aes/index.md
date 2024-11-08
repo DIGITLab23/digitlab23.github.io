@@ -26,9 +26,9 @@ abstract: Many engineering problems require identifying feasible domains under i
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://link.springer.com/article/10.1007/s00158-017-1894-y"
 url_pdf: 'files/papers/Chen-Fuge2018_Article_ActiveExpansionSamplingForLear.pdf'
 url_code: 'https://github.com/IDEALLab/Active-Expansion-Sampling'
 url_dataset: ''

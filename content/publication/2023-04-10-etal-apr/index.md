@@ -28,9 +28,9 @@ abstract: Growing materials data and data-driven informatics drastically promote
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://pubs.aip.org/aip/apr/article-abstract/10/2/021403/2877876/ET-AL-Entropy-targeted-active-learning-for-bias?redirectedFrom=fulltext"
 url_pdf: 'files/papers/2211.07881.pdf'
 url_code: ''
 url_dataset: ''

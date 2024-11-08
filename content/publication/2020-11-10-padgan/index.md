@@ -26,9 +26,9 @@ abstract: Deep generative models are proven to be a useful tool for automatic de
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/143/3/031703/1087578/PaDGAN-Learning-to-Generate-High-Quality-Novel"
 url_pdf: 'files/papers/md_143_3_031703.pdf'
 url_code: 'https://github.com/wchen459/PaDGAN'
 url_dataset: ''

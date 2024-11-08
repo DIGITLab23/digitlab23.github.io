@@ -26,9 +26,9 @@ abstract: To solve a design problem, sometimes it is necessary to identify the f
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/139/11/111405/375561/Beyond-the-Known-Detecting-Novel-Feasible-Domains"
 url_pdf: 'files/papers/md_139_11_111405.pdf'
 url_code: 'https://github.com/IDEALLab/domain_expansion_jmd_2017'
 url_dataset: ''

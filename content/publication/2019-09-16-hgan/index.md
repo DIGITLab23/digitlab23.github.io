@@ -26,9 +26,9 @@ abstract: Real-world designs usually consist of parts with inter-part dependenci
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/141/11/111403/955328/Synthesizing-Designs-With-Interpart-Dependencies"
 url_pdf: 'files/papers/md_141_11_111403.pdf'
 url_code: 'https://github.com/IDEALLab/hgan_jmd_2019'
 url_dataset: ''

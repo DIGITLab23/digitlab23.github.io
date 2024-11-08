@@ -29,9 +29,9 @@ abstract: Variable-density cellular structures can overcome connectivity and man
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://www.sciencedirect.com/science/article/pii/S0045782522002699?via%3Dihub"
 url_pdf: 'files/papers/2103.02588.pdf'
 url_code: 'https://github.com/ideallab/ih-gan_cmame_2022'
 url_dataset: ''

@@ -28,9 +28,9 @@ abstract: Deep generative models have demonstrated effectiveness in learning com
 # Display this page in the Featured widget?
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "Link"
+  url: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/145/1/011703/1147303/GAN-DUF-Hierarchical-Deep-Generative-Models-for"
 url_pdf: 'files/papers/md_145_1_011703.pdf'
 url_code: 'https://github.com/wchen459/GAN-DUF'
 url_dataset: ''
