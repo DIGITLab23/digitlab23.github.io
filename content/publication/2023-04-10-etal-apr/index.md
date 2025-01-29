@@ -31,7 +31,7 @@ featured: false
 links:
 - name: "Link"
   url: "https://pubs.aip.org/aip/apr/article-abstract/10/2/021403/2877876/ET-AL-Entropy-targeted-active-learning-for-bias?redirectedFrom=fulltext"
-url_pdf: 'files/papers/2211.07881.pdf'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

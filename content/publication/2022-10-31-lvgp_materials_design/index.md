@@ -32,7 +32,7 @@ featured: false
 links:
 - name: "Link"
   url: "https://www.nature.com/articles/s41598-022-23431-2"
-url_pdf: 'files/papers/2207.04994.pdf'
+url_pdf: 'https://arxiv.org/pdf/2207.04994'
 url_code: ''
 url_dataset: ''
 url_poster: ''

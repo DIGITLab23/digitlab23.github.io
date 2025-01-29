@@ -36,7 +36,7 @@ featured: false
 links:
 - name: Link
   url: https://arxiv.org/abs/2412.14071
-url_pdf: 'files/papers/1be1bf01-2a0a-4da9-86f6-d64ba2876a9a.pdf'
+url_pdf: 'https://arxiv.org/pdf/2412.14071'
 url_code: ''
 url_dataset: ''
 url_poster: ''

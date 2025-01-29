@@ -32,7 +32,7 @@ featured: false
 links:
 - name: "Link"
   url: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/144/2/021712/1122916/Inverse-Design-of-Two-Dimensional-Airfoils-Using"
-url_pdf: 'files/papers/md_144_2_021712.pdf'
+url_pdf: ''
 url_code: 'https://github.com/IDEALLab/CEBGAN_JMD_2021'
 url_dataset: ''
 url_poster: ''

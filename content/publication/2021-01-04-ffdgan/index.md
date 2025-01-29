@@ -38,7 +38,7 @@ links:
 - name: Link
   url: https://arc.aiaa.org/doi/10.2514/6.2021-1690
 
-url_pdf: 'files/papers/2101.02744.pdf'
+url_pdf: 'https://arxiv.org/pdf/2101.02744'
 url_code: ''
 url_dataset: ''
 url_poster: ''

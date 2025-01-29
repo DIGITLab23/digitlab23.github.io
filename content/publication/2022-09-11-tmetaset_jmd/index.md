@@ -33,7 +33,7 @@ featured: false
 links:
 - name: "Link"
   url: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/145/3/031704/1147447/t-METASET-Task-Aware-Acquisition-of-Metamaterial"
-url_pdf: 'files/papers/2202.10565.pdf'
+url_pdf: 'https://arxiv.org/pdf/2202.10565'
 url_code: ''
 url_dataset: ''
 url_poster: ''

@@ -33,7 +33,7 @@ featured: false
 links:
 - name: Link
   url: https://onlinelibrary.wiley.com/doi/abs/10.1002/aisy.202400611
-url_pdf: 'files/papers/2401.00003v5.pdf'
+url_pdf: 'https://arxiv.org/pdf/2401.00003'
 url_code: 'https://github.com/DIGITLab23/RIGID'
 url_dataset: ''
 url_poster: ''

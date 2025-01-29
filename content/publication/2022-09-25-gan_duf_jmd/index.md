@@ -31,7 +31,7 @@ featured: false
 links:
 - name: "Link"
   url: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/145/1/011703/1147303/GAN-DUF-Hierarchical-Deep-Generative-Models-for"
-url_pdf: 'files/papers/md_145_1_011703.pdf'
+url_pdf: 'https://arxiv.org/pdf/2202.10558'
 url_code: 'https://github.com/wchen459/GAN-DUF'
 url_dataset: ''
 url_poster: ''

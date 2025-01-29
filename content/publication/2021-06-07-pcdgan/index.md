@@ -39,7 +39,7 @@ links:
 - name: Link
   url: https://dl.acm.org/doi/10.1145/3447548.3467414
 
-url_pdf: 'files/papers/2106.03620.pdf'
+url_pdf: 'https://arxiv.org/pdf/2106.03620'
 url_code: 'https://github.com/pcdgan/PcDGAN'
 url_dataset: ''
 url_poster: ''

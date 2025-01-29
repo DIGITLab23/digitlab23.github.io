@@ -34,7 +34,7 @@ featured: false
 links:
 - name: Link
   url: https://www.sciencedirect.com/science/article/pii/S1474034624005883
-url_pdf: 'files/papers/2407.07611v1.pdf'
+url_pdf: 'https://arxiv.org/pdf/2407.07611'
 url_code: ''
 url_dataset: ''
 url_poster: ''

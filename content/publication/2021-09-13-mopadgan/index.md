@@ -29,7 +29,7 @@ featured: false
 links:
 - name: "Link"
   url: "https://www.sciencedirect.com/science/article/pii/S1568494621008310?via%3Dihub"
-url_pdf: 'files/papers/MOPadGAN_ASC__ArXiv_.pdf'
+url_pdf: 'https://arxiv.org/pdf/2009.07110'
 url_code: 'https://github.com/wchen459/MO-PaDGAN-Optimization'
 url_dataset: ''
 url_poster: ''

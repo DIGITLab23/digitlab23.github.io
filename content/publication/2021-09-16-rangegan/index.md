@@ -1,5 +1,5 @@
 ---
-title: "RANGE-GAN: Design Synthesis Under Constraints Using Conditional Generative Adversarial Networks"
+title: "Range-Constrained Generative Adversarial Network: Design Synthesis Under Constraints Using Conditional Generative Adversarial Networks"
 authors:
 - Amin Heyrani Nobari
 - Wei_Chen
@@ -30,7 +30,7 @@ featured: false
 links:
 - name: "Link"
   url: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/144/2/021708/1119623/Range-Constrained-Generative-Adversarial-Network"
-url_pdf: 'files/papers/Range_GAN_Special_Issue.pdf'
+url_pdf: ''
 url_code: 'https://github.com/ahnobari/Range-GAN'
 url_dataset: ''
 url_poster: ''
