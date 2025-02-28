@@ -37,6 +37,7 @@ Recommended courses for new Ph.D. students.
 | MATH 640           | Linear Algebra for Applications                           | Math Course |
 | MATH 619           | Applied Probability                                       | Math Course |
 | MATH 651           | Optimization I                                            | Math Course |
+| MATH 677           | Mathematical Foundations for Data Science                 | Math Course |
 | MATH 678           | Introduction to Topological Data Analysis                 | Math Course |
 
 Feel free to check other courses at the [graduate course descriptions page](https://catalog.tamu.edu/graduate/course-descriptions/).
