@@ -13,7 +13,7 @@ Ideal candidates will have strong foundations in mathematics and programming. We
 
 To express your interest, please email Dr. Wei Chen at [w.chen@tamu.edu](mailto:w.chen@tamu.edu) with the following:
 
-* A brief description (≤ 200 words) of your research interest and how they align with the work of the DIGIT Lab
+* A brief description (≤ 200 words) of your research interest and how it aligns with the work of the DIGIT Lab
 * Your CV
 * Transcript(s)
 
