@@ -29,7 +29,7 @@ interests:
 education:
   courses:
     - course: BSc in Mechanical Engineering
-      institution: Texas A and M at qatar
+      institution: Texas A&M at Qatar
       year: 2025
 
 # Social/Academic Networking
@@ -39,13 +39,13 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:jipengcui@tamu.edu'
+    link: 'mailto:mohamedsaleh@tamu.edu'
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?hl=en&user=N5mnJN4AAAAJ
+    link: 
   - icon: github
     icon_pack: fab
-    link: https://github.com/CJJP-git
+    link: 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
   # - icon: cv
