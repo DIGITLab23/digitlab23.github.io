@@ -13,7 +13,7 @@ start_time: 2025-05-27
 superuser: false
 
 # Role/position
-role: part time Research 
+role: Undergraduate Researcher 
 
 # Organizations/Affiliations
 organizations:
