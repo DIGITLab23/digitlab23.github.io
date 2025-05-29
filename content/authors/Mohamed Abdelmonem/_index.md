@@ -61,7 +61,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - research student 
+  - Undergraduate Students 
 ---
 
 Mohamed Abdemonem is an undergraduate student pursuing a bachelor's degree in Mechanical Engineering at Texas A&M University at Qatar. He is currently working on a research project under the supervision of Dr. Wei Chen, focusing on knowledge graphs, large language models (LLMs), and related AI technologies. Mohamed is passionate about the intersection of engineering and artificial intelligence. In his free time, he enjoys staying active and especially loves playing football, along with other sports.
