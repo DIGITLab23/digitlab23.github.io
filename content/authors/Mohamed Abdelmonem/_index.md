@@ -3,21 +3,21 @@
 title: Jipeng Cui
 
 # Full Name (for SEO)
-first_name: Jipeng
-last_name: Cui
+first_name: Mohamed
+last_name: Abdelmonem
 
 # Start time
-start_time: 2024-08-18
+start_time: 2025-05-27
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Research Assistant
+role: part time Research 
 
 # Organizations/Affiliations
 organizations:
-  - name: Texas A&M University
+  - name: Texas A&M University at qatar
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
@@ -28,12 +28,9 @@ interests:
 
 education:
   courses:
-    - course: MSc in Mechanics
-      institution: Southern University of Science and Technology (SUSTech)
-      year: 2024
     - course: BSc in Mechanical Engineering
-      institution: Beijing Jiaotong University
-      year: 2021
+      institution: Texas A and M at qatar
+      year: 2025
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -64,7 +61,8 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - PhD Students
+  - research student 
 ---
 
-Jipeng is a Ph.D. student majoring in Mechanical Engineering. Jipeng received his master's degree in mechanics from the Southern University of Science and Technology (SUSTech) in 2024. Before that, he earned his bachelor's degree in mechanical engineering from Beijing Jiaotong University (BJTU) in 2021. Now Jipeng is working on data-driven generative design under the supervision of Dr. Chen. In his leisure time, Jipeng likes to play sports such as fitness, Ping-Pong, badminton, and basketball.
+Mohamed Abdemonem is an undergraduate student pursuing a bachelor's degree in Mechanical Engineering at Texas A&M University at Qatar. He is currently working on a research project under the supervision of Dr. Wei Chen, focusing on knowledge graphs, large language models (LLMs), and related AI technologies. Mohamed is passionate about the intersection of engineering and artificial intelligence. In his free time, he enjoys staying active and especially loves playing football, along with other sports.
+
