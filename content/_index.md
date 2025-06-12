@@ -16,7 +16,7 @@ sections:
         
         In the **D**esign **I**nnovation & **G**enerative **I**n**T**elligence (DIGIT) Lab, we develop advanced **AI and machine learning** methods for engineering design, targeting some of today's most challenging problems in **design ideation** (how can AI help us generate innovative ideas?), **design automation** (how can AI automate the design process?), and **design for X** (how can AI advance design for manufacturing, sustainability, and beyond?).
 
-  
+<!--
   - block: markdown
     content:
       title: Join Us!
@@ -27,7 +27,7 @@ sections:
         Are you passionate about pushing the boundaries of AI and machine learning for engineering design? At the DIGIT Lab, we are committed to research in this exciting field---and you can be part of it! We have openings for **fully-funded Ph.D. positions** starting Fall 2025, and we’re looking for enthusiastic individuals to join our team! 
         
         [Learn More >](/join/)
-  
+-->
   
   - block: collection
     content:
