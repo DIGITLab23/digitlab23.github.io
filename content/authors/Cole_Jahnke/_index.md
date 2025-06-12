@@ -58,7 +58,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Undergraduate Students
+  - Alumni
 ---
 
 Cole Jahnke is an Undergraduate Mechanical Engineering student. He is now working on Free-Form Geometric Uncertainty Quantification for Advanced Manufacturing under the supervision of Dr. Wei Chen.
