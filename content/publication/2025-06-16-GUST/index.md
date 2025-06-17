@@ -1,5 +1,5 @@
 ---
-title: "Inverse Design of Nonlinear Mechanics of Bio-inspired Materials Through Interface Engineering and Bayesian Optimization"
+title: "GUST: Quantifying Free-Form Geometric Uncertainty of Metamaterials Using Small Data"
 authors:
 - Jiahui Zheng
 - Cole Jahnke
