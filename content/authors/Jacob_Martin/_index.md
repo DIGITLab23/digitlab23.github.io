@@ -13,7 +13,7 @@ start_time: 2025-06-16
 superuser: false
 
 # Role/position
-role: Student Technician
+role: Graduate Researcher
 
 # Organizations/Affiliations
 organizations:

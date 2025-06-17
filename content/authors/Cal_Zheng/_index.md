@@ -13,7 +13,7 @@ start_time: 2023-08-15
 superuser: false
 
 # Role/position
-role: Research Assistant
+role: Graduate Researcher
 
 # Organizations/Affiliations
 organizations:
@@ -61,7 +61,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - PhD Students
+  - Master Students
 ---
 
 Cal Zheng is a Ph.D. student majoring in Mechanical Engineering. Before joining DIGIT, he earned his B.S. in Mechanical Engineering at North Carolina State University. Now he is working on Transfer Learning On the Generative Adversarial Network(GAN) to Quantify Manufacturing Uncertainty under the supervision of Dr. Wei Chen. 
