@@ -14,6 +14,7 @@ Recommended courses for new Ph.D. students.
 | MEEN 603           | Theory of Elasticity                                      | Core Course |
 | MEEN 602           | Modeling and Analysis of Mechanical Systems               |             |
 | MEEN 653           | Scientific Writing                                        |             |
+| MEEN 703           | Generative Design-Principles, Algorithms and Applications |             |
 | CSCE 620/VIZA 670  | Computational Geometry                                    |             |
 | CSCE 624           | Sketch Recognition                                        |             |
 | CSCE 625           | Artificial Intelligence                                   |             |
@@ -30,6 +31,11 @@ Recommended courses for new Ph.D. students.
 | CSCE 676           | Data Mining and Analysis                                  |             |
 | CSCE 679/VIZA 676  | Data Visualization                                        |             |
 | ECEN 629           | Applied Convex Optimization                               |             |
+| ECEN 740           | Machine Learning Engineering                              |             |
+| ECEN 743           | Reinforcement Learning                                    |             |
+| ECEN 744           | Scientific Machine Learning                               |             |
+| ECEN 756           | Game Theory                                               |             |
+| ECEN 760           | Introduction to Probabilistic Graphical Models            |             |
 | STAT 601           | Statistical Analysis                                      | Math Course |
 | STAT 607           | Sampling                                                  | Math Course |
 | STAT 630           | Overview of Mathematical Statistics                       | Math Course |
