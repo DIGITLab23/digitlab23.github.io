@@ -62,7 +62,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Undergraduate Students
+  - Alumni
 ---
 
 Adithi Iyer Ganesan is an undergraduate student majoring in Electronics Systems and Engineering Technology major at Texas A&M University. Now she is working on AI-Driven programmable metamaterials design under the supervision of Dr. Wei Chen and Jipeng Cui.
