@@ -12,7 +12,7 @@ sections:
       email: w.chen@tamu.edu
       phone: 979-458-5021
       address:
-        street:  JCAIN 303, 180 Spence Street
+        street:  Doherty 310, 242 Spence St.
         city: College Station
         region: TX
         postcode: '77843'
