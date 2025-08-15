@@ -19,8 +19,8 @@ sections:
         country: United States
         country_code: US
       coordinates:
-        latitude: '30.620012153760072'
-        longitude: '-96.34055052249667'
+        latitude: '30.6192454985439'
+        longitude: '-96.3399191225976'
       #contact_links:
       #  - icon: comments
       #    icon_pack: fas
