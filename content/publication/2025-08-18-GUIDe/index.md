@@ -30,7 +30,7 @@ publication_short: ""
 featured: false
 
 
-url_pdf: 'GUIDe__Generative_and_Uncertainty_Informed_Inverse_Design_for_On_Demand_Nonlinear_Functional_Responses.pdf'
+url_pdf: 'paper.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
