@@ -29,10 +29,8 @@ abstract: Inverse design problems are pervasive in engineering, particularly whe
 # - Source Themes
 featured: false
 
-links:
-- name: Link
-  url:
-url_pdf: ''
+
+url_pdf: 'GUIDe__Generative_and_Uncertainty_Informed_Inverse_Design_for_On_Demand_Nonlinear_Functional_Responses.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
