@@ -9,7 +9,7 @@ date: "2025-08-18"
 doi: "-"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-08-18"
+publishDate: "2025-08-17"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -30,7 +30,7 @@ publication_short: ""
 featured: false
 
 
-url_pdf: 'GUIDe__Generative_and_Uncertainty_Informed_Inverse_Design_for_On_Demand_Nonlinear_Functional_Responses.pdf'
+url_pdf: 'paper.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
