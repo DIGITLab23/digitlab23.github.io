@@ -61,7 +61,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Undergraduate Students
+  - Alumni
 ---
 
 Ryan Landa is an undergraduate student majoring in Mechanical Engineering and minoring in Computer Science at Texas A&M University. He is currently working on using conditional diffusion modeling to predict geometric uncertainty in metamaterials under the supervision of Dr. Wei Chen. 

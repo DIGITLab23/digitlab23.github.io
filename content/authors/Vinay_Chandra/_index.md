@@ -62,7 +62,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Master Students
+  - Alumni
 ---
 
 Vinay is a graduate student majoring in Data Science. Now he is working on AI for Design Innovation powered by LLMs and Knowledge Graphs under the supervision of Dr. Wei Chen.

@@ -3,7 +3,7 @@ title: "Inverse Design of Nonlinear Mechanics of Bio-inspired Materials Through 
 authors:
 - Wei Zhang
 - Mingjian Tang
-- Haoxuan Mu
+- Haoxuan_Mu
 - Xingzi Yang
 - Xiaowei Zeng
 - Rui Tuo
