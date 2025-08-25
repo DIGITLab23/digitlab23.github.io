@@ -30,7 +30,7 @@ abstract: Inverse design problems are pervasive in engineering, particularly whe
 featured: false
 
 
-url_pdf: 'paper.pdf'
+url_pdf: 'files/papers/GUIDe.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''

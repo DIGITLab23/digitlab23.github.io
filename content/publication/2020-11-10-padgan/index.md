@@ -29,7 +29,7 @@ featured: false
 links:
 - name: "Link"
   url: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/143/3/031703/1087578/PaDGAN-Learning-to-Generate-High-Quality-Novel"
-url_pdf: 'files/papers/md_143_3_031703.pdf'
+url_pdf: 'https://arxiv.org/pdf/2002.11304'
 url_code: 'https://github.com/wchen459/PaDGAN'
 url_dataset: ''
 url_poster: ''

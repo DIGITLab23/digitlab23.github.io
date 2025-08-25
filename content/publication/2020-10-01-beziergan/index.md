@@ -30,7 +30,7 @@ featured: false
 links:
 - name: "Link"
   url: "https://arc.aiaa.org/doi/10.2514/1.J059317"
-url_pdf: 'files/papers/1.j059317.pdf'
+url_pdf: 'https://arxiv.org/pdf/2006.12496'
 url_code: 'https://github.com/IDEALLab/bezier-gan'
 url_dataset: ''
 url_poster: ''

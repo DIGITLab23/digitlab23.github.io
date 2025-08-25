@@ -30,7 +30,7 @@ featured: false
 links:
 - name: "Link"
   url: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/139/5/051102/380502/Design-Manifolds-Capture-the-Intrinsic-Complexity"
-url_pdf: 'files/papers/md_139_05_051102.pdf'
+url_pdf: ''
 url_code: 'https://github.com/IDEALLab/design_embeddings_jmd_2016'
 url_dataset: ''
 url_poster: ''

@@ -29,7 +29,7 @@ featured: false
 links:
 - name: "Link"
   url: "https://link.springer.com/article/10.1007/s00158-017-1894-y"
-url_pdf: 'files/papers/Chen-Fuge2018_Article_ActiveExpansionSamplingForLear.pdf'
+url_pdf: 'https://arxiv.org/pdf/1708.07888'
 url_code: 'https://github.com/IDEALLab/Active-Expansion-Sampling'
 url_dataset: ''
 url_poster: ''
