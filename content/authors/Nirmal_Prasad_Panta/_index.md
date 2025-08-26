@@ -68,4 +68,4 @@ user_groups:
   - PhD Students
 ---
 
-Nirmal is a Ph.D. student majoring in Mechanical Engineering. He earned his bachelors in Mechanical Engineering at Pulchowk Campus, Tribhhuvan University. Now, he is working on a AI-powered Design Innovation project using LLMs and ontological representation under the supervision of Dr. Wei "Wayne" Chen. He likes to visit new places, read books, and watch movies. 
+Nirmal is a Ph.D. student majoring in Mechanical Engineering. He earned his bachelors in Mechanical Engineering at Pulchowk Campus, Tribhhuvan University. Now, he is working on a AI-powered Design Innovation project using LLMs and ontological representation under the supervision of Dr. Wei "Wayne" Chen. He likes to visit new places, read books, and watch movies in his leisure time. 
