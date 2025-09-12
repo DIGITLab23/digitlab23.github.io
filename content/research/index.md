@@ -7,7 +7,7 @@ banner:
   image: ""
 ---
 
-In the Design Innovation & Generative InTelligence (DIGIT) Lab, we develop advanced **AI and machine learning (ML)** methods for engineering design, targeting some of today’s most challenging problems in design ideation, design automation, and design for X.
+Research in the DIGIT Lab aims to answer this question: How can AI design better materials, structures, and machines? There are three major themes around this question:
 
 * **Design ideation:** Human creativity is constrained by individual knowledge and experience, with outcomes often highly uncertain. We explore how AI can enhance the generation of creative design ideas, fostering human-AI co-creativity and accelerating design innovation.
 * **Design automation:** We develop AI and ML methods to automatically generate high-quality, detailed design solutions from specific targets, addressing key challenges such as expansive design spaces, costly design evaluations (e.g., simulations and experiments), and inherent uncertainties.
