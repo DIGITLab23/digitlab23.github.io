@@ -1,7 +1,7 @@
 ---
 title: "GUST: Quantifying Free-Form Geometric Uncertainty of Metamaterials Using Small Data"
 authors:
-- Jiahui_Zheng
+- Cal_Zheng
 - Cole_Jahnke
 - Wei_Chen
 date: "2025-06-16"
