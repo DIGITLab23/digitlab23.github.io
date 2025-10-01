@@ -4,19 +4,19 @@ authors:
 - Cal_Zheng
 - Cole_Jahnke
 - Wei_Chen
-date: "2025-06-16"
-doi: "10.48550/arXiv.2506.12051"
+date: "2025-09-26"
+doi: "10.1115/1.4069971"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-06-16"
+publishDate: "2025-09-26"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"]
+publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "arXiv preprint arXiv:2506.12051"
+publication: "Journal of Mechanical Design"
 publication_short: ""
 
 abstract: This paper introduces GUST (Generative Uncertainty learning via Self-supervised pretraining and Transfer learning), a framework for quantifying free-form geometric uncertainties inherent in the manufacturing of metamaterials. GUST leverages the representational power of deep generative models to learn a high-dimensional conditional distribution of as-fabricated unit cell geometries given nominal designs, thereby enabling uncertainty quantification. To address the scarcity of real-world manufacturing data, GUST employs a two-stage learning process. First, it leverages self-supervised pretraining on a large-scale synthetic dataset to capture the structure variability inherent in metamaterial geometries and an approximated distribution of as-fabricated geometries given nominal designs. Subsequently, GUST employs transfer learning by fine-tuning the pretrained model on limited real-world manufacturing data, allowing it to adapt to specific manufacturing processes and nominal designs. With only 960 unit cells additively manufactured in only two passes, GUST can capture the variability in geometry and effective material properties. In contrast, directly training a generative model on the same amount of real-world data proves insufficient, as demonstrated through both qualitative and quantitative comparisons. This scalable and cost-effective approach significantly reduces data requirements while maintaining the effectiveness in learning complex, real-world geometric uncertainties, offering an affordable method for free-form geometric uncertainty quantification in the manufacturing of metamaterials. The capabilities of GUST hold significant promise for high-precision industries such as aerospace and biomedical engineering, where understanding and mitigating manufacturing uncertainties are critical.
@@ -30,7 +30,7 @@ featured: false
 
 links:
 - name: Link
-  url: https://arxiv.org/abs/2506.12051
+  url: https://asmedigitalcollection.asme.org/mechanicaldesign/article/doi/10.1115/1.4069971/1222674/GUST-Quantifying-Free-Form-Geometric-Uncertainty
 url_pdf: 'https://arxiv.org/pdf/2506.12051'
 url_code: ''
 url_dataset: ''
