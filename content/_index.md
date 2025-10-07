@@ -10,7 +10,7 @@ sections:
       text: |
         <div style="padding: 2rem 0;">
           <h1>DIGIT Lab</h1>
-          <img src="img/landing_page_image.png" alt="DIGIT Lab Research" style="float: right; margin: 30px 0 10px 20px; width: 550px;">
+          <img src="img/landing_page_image.png" alt="DIGIT Lab Research" style="float: right; margin: 0 0 10px 20px; width: 600px;">
         
           In the <u>D</u>esign <u>I</u>nnovation & <u>G</u>enerative <u>I</u>n<u>t</u>elligence (DIGIT) Lab, we study **how AI can design better materials, structures, and machines**. Our research focus extends beyond model performance and efficiency, exploring how AI can fundamentally advance design across four key dimensions: **complexity** (How can AI enable a level of design complexity that is fundamentally inaccessible to existing design methodologies?), **creativity** (How can AI enable or accelerate the discovery of "out-of-the-box" design solutions?), **trustworthiness** (How can we develop AI-driven design methodologies that can be trusted by end-users?), and **insights** (How can AI generate new knowledge that expands human understanding and guides design?). Guided by these fundamental questions, we develop computational methodologies for design ideation, generative design, and design for X ("X" can be manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.
 
