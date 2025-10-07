@@ -14,7 +14,7 @@ sections:
       text: |
         <br>
         
-        In the <u>D</u>esign <u>I</u>nnovation & <u>G</u>enerative <u>I</u>n<u>t</u>elligence (DIGIT) Lab, we study **how AI can design better materials, structures, and machines**. Specifically, we develop advanced AI and machine learning methods for engineering design, targeting some of today's most challenging problems in **design ideation** (how can AI help us generate innovative ideas?), **design automation** (how can AI automate the design process?), and **design for X** (how can AI advance design for manufacturing, sustainability, and beyond?).
+        In the <u>D</u>esign <u>I</u>nnovation & <u>G</u>enerative <u>I</u>n<u>t</u>elligence (DIGIT) Lab, we study **how AI can design better materials, structures, and machines**. Our research focus extends beyond model performance and efficiency, exploring how AI can fundamentally advance design across four key dimensions: **complexity** (How can AI enable a level of design complexity that is fundamentally inaccessible to existing design methodologies?), **creativity** (How can AI enable or accelerate the discovery of "out-of-the-box" design solutions?), **trustworthiness** (How can we develop AI-driven design methodologies that can be trusted by end-users?), and **insights** (How can AI generate new knowledge that expands human understanding and guides design?). Guided by these fundamental questions, we develop computational methodologies for design ideation, generative design, and design for X ("X" can be manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.
 
 
 #  - block: markdown
