@@ -7,11 +7,14 @@ banner:
   image: ""
 ---
 
-Research in the DIGIT Lab aims to answer this question: *How can AI design better materials, structures, and machines?* There are three major themes around this question:
+Research in the DIGIT Lab aims to answer this question: *How can AI design better materials, structures, and machines?* Our research focus extends beyond model performance and efficiency, exploring how AI can fundamentally advance design across four key dimensions: 
 
-* **Design ideation:** Human creativity is constrained by individual knowledge and experience, with outcomes often highly uncertain. We explore how AI can enhance the generation of creative design ideas, fostering human-AI co-creativity and accelerating design innovation.
-* **Design automation:** We develop AI and ML methods to automatically generate high-quality, detailed design solutions from specific targets, addressing key challenges such as expansive design spaces, costly design evaluations (e.g., simulations and experiments), and inherent uncertainties.
-* **Design for X:** The "X" encompasses a range of design objectives, such as manufacturing, sustainability, reliability, and beyond. We leverage AI, ML, and optimization to efficiently generate design solutions that balance and enhance these goals across complex design spaces.
+          1. **Complexity:** How can AI enable a level of design complexity that is fundamentally inaccessible to existing design methodologies?
+          2. **Creativity:** How can AI enable or accelerate the discovery of "out-of-the-box" design solutions?
+          3. **Trustworthiness:** How can we develop AI-driven design methodologies that end-users can trust?
+          4. **Insights:** How can AI generate new knowledge that expands human understanding and guides design? 
+
+          Guided by these fundamental questions, we develop computational methodologies for design ideation, generative design, and design for X ("X" can represent manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.
 
 ![alt text](../../assets/media/landing_page_image.png)
 
