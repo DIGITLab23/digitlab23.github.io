@@ -7,7 +7,7 @@ banner:
   image: ""
 ---
 
-Research in the DIGIT Lab aims to answer this question: *How can AI design better materials, structures, and machines?* Our research focus extends beyond model performance and efficiency, exploring how AI can fundamentally advance design across four key dimensions: 
+Research in the DIGIT Lab aims to answer this overarching question: *How can AI design better materials, structures, and machines?* We look beyond model performance and efficiency to focus on four key challenges: 
 
 1. **Complexity:** How can AI enable a level of design complexity that is fundamentally inaccessible to existing design methodologies?
 2. **Creativity:** How can AI enable or accelerate the discovery of "out-of-the-box" design solutions?
