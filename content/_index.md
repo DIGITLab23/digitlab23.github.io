@@ -5,7 +5,7 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: blank
+  - block: markdown
     content: 
       text: |
         <div style="padding: 2rem 0;">
