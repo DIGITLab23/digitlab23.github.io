@@ -1,9 +1,9 @@
 ---
 # Display name
-title: Haoxuan Mu
+title: Haoxuan Dylan Mu
 
 # Full Name (for SEO)
-first_name: Haoxuan
+first_name: Haoxuan Dylan
 last_name: Mu
 
 # Start time
