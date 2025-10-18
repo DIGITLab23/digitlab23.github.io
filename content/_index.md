@@ -16,7 +16,7 @@ sections:
 
           1. **Complexity:** How can AI unlock design complexities that are fundamentally inaccessible to traditional methods?
           2. **Trustworthiness:** How can we develop AI-driven design methodologies that engineers can trust?
-          3. **Discoverability:** How can AI discover new knowledge that expands human understanding and guides design? 
+          3. **Discoverability:** How can AI discover new knowledge that expands human understanding and guides design innovation? 
           4. **Creativity:** How can AI enable or accelerate the discovery of "out-of-the-box" design solutions and become a true inventor?
 
           Guided by these fundamental questions, we develop computational methodologies for design ideation, generative design, and design for X ("X" can represent manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.
