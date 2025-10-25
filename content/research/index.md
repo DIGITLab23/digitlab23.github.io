@@ -14,7 +14,7 @@ Research in the DIGIT Lab aims to answer this overarching question: *How can AI 
 3. **Discoverability.** We believe the promise of AI in design is not just better final products, but making us better designers. We aim to develop methods that decode the complex patterns in data or AI models into human-understandable knowledge (e.g., new design rules or unknown structure-property relationships). This drives a fundamental question: *How can AI discover new knowledge that expands human understanding and guides design innovation?* 
 4. **Creativity.** Human creativity is always constrained by individual knowledge, experience, and cognitive biases, while today’s AI excels at interpolating existing data but struggles to generate genuinely new ideas. To transform AI from a tool of interpolation into an engine for innovation, our research asks: *How can AI enable or accelerate the discovery of "out-of-the-box" design solutions and become a true inventor?*
 
-Guided by these fundamental questions, we develop computational methodologies for design ideation, generative design, and design for X ("X" can represent manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.
+Guided by these fundamental questions, we develop computational methodologies for **design ideation**, **generative design**, and **design for X** ("X" can represent manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.
 
 ![alt text](../../assets/media/landing_page_image.png)
 
