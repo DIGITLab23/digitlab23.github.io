@@ -7,8 +7,6 @@ banner:
   image: ""
 ---
 
-![alt text](../../assets/media/landing_page_image.png)
-
 Research in the DIGIT Lab aims to answer this overarching question: *How can AI design better materials, structures, and machines?* Our goal is to establish a new paradigm of AI-driven engineering design, transforming AI from a supportive tool into the primary driver for designing and discovering superior materials, structures, and machines. In this paradigm, AI not only solves complex design problems and finds innovative solutions, but also does so in a trustworthy manner while discovering new insights that expand our knowledge and drive further innovation. Despite significant advancements in AI, a considerable gap separates this vision from today’s reality. To fill this gap and unlock AI’s true potential in engineering design, I aim to tackle the following four fundamental challenges:
 
 1. **Complexity.** Advances in manufacturing have unlocked immense design complexity, leading to dramatic improvements in functional capabilities. Yet, a gap persists between what we can build and what we can design, preventing the full exploitation of these modern capabilities. This raises a critical question: *How can AI unlock design complexities that are fundamentally inaccessible to traditional methods?*
@@ -17,5 +15,7 @@ Research in the DIGIT Lab aims to answer this overarching question: *How can AI 
 4. **Creativity.** Human creativity is always constrained by individual knowledge, experience, and cognitive biases, while today’s AI excels at interpolating existing data but struggles to generate genuinely new ideas. To transform AI from a tool of interpolation into an engine for innovation, our research asks: *How can AI enable or accelerate the discovery of "out-of-the-box" design solutions and become a true inventor?*
 
 Guided by these fundamental questions, we develop computational methodologies for design ideation, generative design, and design for X ("X" can represent manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.
+
+![alt text](../../assets/media/landing_page_image.png)
 
 For more information, you can explore our [**paper collection**](/publication/) or check out our [**open-source code**](https://www.github.com/DIGITLab23).
