@@ -39,7 +39,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:kanaad.chaphekar@tamu.edu'
+    link: 'kanaad.chaphekar@tamu.edu'
   - icon: github
     icon_pack: fab
     link: https://github.com/kanaadchaphekar-hue
@@ -58,7 +58,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - PhD Students
+  - Master Students
 ---
 
 Kanaad is a MS student majoring in Mechanical Engineering. Kanaad received his bachelor's degree in mechanical engineering with specialization in AI&ML from the SRM Institute of Science & Technology in 2025. Now Kanaad is working on data-driven generative design under the supervision of Dr. Chen. In his leisure time, Kanaad likes playing sports such as Tennis, Cricket, and enjoys travelling (especially off-beat) and a cook-off.
