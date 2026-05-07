@@ -58,7 +58,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Undergraduate Students
+  - Alumni
 ---
 
 Wisam Gadam is an undergraduate student majoring in Mechanical Engineering at Texas A&M University at Qatar. She is participating in the 2024 Texas Summer Research Experience program under the mentorship of Dr. Wei Chen and Haoxuan Mu. Her research focuses on leveraging Prior-Data Fitted Networks (PFNs) to improve the inverse design of engineered materials and aerodynamic shapes.
