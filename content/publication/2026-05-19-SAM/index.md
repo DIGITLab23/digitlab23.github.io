@@ -1,7 +1,7 @@
 ---
 title: "Scalable Active Metamaterials for Shape-Morphing"
 authors:
-- Jipeng Cui
+- Jipeng_Cui
 - Wei_Chen
 date: "2026-05-10"
 doi: ""
