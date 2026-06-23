@@ -30,7 +30,7 @@ education:
   courses:
     - course: BS in Mechanical Engineering
       institution: Texas A\&M University
-      year: 2027  
+      year: 2027
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -40,12 +40,6 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:courtney04@tamu.edu'
-  # - icon: google-scholar
-  #   icon_pack: ai
-  #   link: 
-  # - icon: github
-  #   icon_pack: fab
-  #   link: https://github.com/w-starlight
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
   # - icon: cv
@@ -61,7 +55,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Undergraduate Student
+  - Undergraduate Students
 ---
 
 Courtney Potts is an undergraduate Mechanical Engineering student working under the guidance of Dr. Wei Chen and PhD student Jipeng Cui. Her research focuses on the fabrication of active shape-morphing metamaterials. In her free time, she enjoys climbing, traveling, baking, and reading. 
