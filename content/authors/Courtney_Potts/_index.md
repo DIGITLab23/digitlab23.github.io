@@ -27,6 +27,7 @@ interests:
   
 
 education:
+  courses:
     - course: BS in Mechanical Engineering
       institution: Texas A\&M University
       year: 2027  
