@@ -23,4 +23,5 @@ To express your interest, please email Dr. Wei "Wayne" Chen at [w.chen@tamu.edu]
 
 Please put **"2027 Fall DIGIT Lab PhD Position"** as the email subject line.
 
+![alt text](group_photo_1.jpg)
 ![alt text](group_photo.jpg)
