@@ -55,7 +55,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Undergraduate Students
+  - Alumni
 ---
 
 Courtney Potts is an undergraduate Mechanical Engineering student working under the guidance of Dr. Wei Chen and PhD student Jipeng Cui. Her research focuses on the fabrication of active shape-morphing metamaterials. In her free time, she enjoys climbing, traveling, baking, and reading. 
