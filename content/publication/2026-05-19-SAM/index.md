@@ -30,7 +30,7 @@ featured: false
 links:
 - name: Link
   url: https://arxiv.org/abs/2605.07030
-url_pdf: 'https://arxiv.org/abs/2605.07030'
+url_pdf: 'https://github.com/CJJP-git/SAM-pdf/releases/download/v1.0.0/SAM.pdf'
 url_code: ''
 url_dataset: 'https://huggingface.co/datasets/CJJP/SAM-Dataset'
 url_poster: ''
