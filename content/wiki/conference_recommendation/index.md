@@ -32,13 +32,12 @@ Conferences related to Engineering Design and AI/ML.
 ## Optimization
 * [World Congress on Structural and Multidisciplinary Optimisation (WCSMO)](https://www.issmo.net/calendar/wcsmo-worldcongressofstructuralandmultidisciplinaryoptimization/) (biennially)
 
-## Mechanics
+## Mechanics/Materials
 * The Society of Engineering Science (SES) Technical Meeting
 * U.S. National Congress on Computational Mechanics (USNCCM) (biennially)
 * World Congress on Computational Mechanics (WCCM) (biennially)
-
-## Materials
 * [Materials Research Society (MRS) Spring/Fall Meeting](https://www.mrs.org/meetings-events/)
+* [Multifunctional Materials and Structures (Gordon Research Seminar)](https://www.grc.org/multifunctional-materials-and-structures-grs-conference/)
 
 ## Uncertainty Quantification
 * SIAM Conference on Uncertainty Quantification (UQ)
