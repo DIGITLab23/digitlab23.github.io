@@ -32,7 +32,7 @@ links:
   url: https://arxiv.org/abs/2605.07030
 url_pdf: 'files/papers/SAM.pdf'
 url_code: ''
-url_dataset: 'https://huggingface.co/datasets/CJJP/SAM-Dataset'
+url_dataset: 'https://huggingface.co/datasets/digitlab/SAM-Dataset'
 url_poster: ''
 url_project: ''
 url_slides: ''
