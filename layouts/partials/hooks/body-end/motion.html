@@ -1,4 +1,4 @@
-{{/* Subtle motion: reveal content on scroll and count up lab stats. */}}
+{{/* Subtle motion: reveal content on scroll. */}}
 <script>
 (function () {
   if (!('IntersectionObserver' in window)) return;
@@ -6,7 +6,7 @@
 
   // Fade elements in as they scroll into view
   var targets = document.querySelectorAll(
-    '.intro-text > *, .intro-figure, .lab-stat, .home-section .section-heading, .stream-item, .cta-group'
+    '.intro-text > *, .intro-figure, .home-section .section-heading, .stream-item, .cta-group'
   );
   var revealer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -19,26 +19,6 @@
     el.classList.add('reveal');
     el.style.transitionDelay = Math.min(i % 6, 5) * 60 + 'ms';
     revealer.observe(el);
-  });
-
-  // Count numbers up from zero the first time they are seen
-  var counter = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-      var el = entry.target;
-      var end = parseInt(el.textContent, 10);
-      var start = performance.now();
-      var duration = 1200;
-      (function tick(now) {
-        var t = Math.min((now - start) / duration, 1);
-        el.textContent = Math.round(end * (1 - Math.pow(1 - t, 3)));
-        if (t < 1) requestAnimationFrame(tick);
-      })(start);
-      counter.unobserve(el);
-    });
-  }, { threshold: 0.6 });
-  document.querySelectorAll('.lab-stat-value').forEach(function (el) {
-    if (!isNaN(parseInt(el.textContent, 10))) counter.observe(el);
   });
 })();
 </script>

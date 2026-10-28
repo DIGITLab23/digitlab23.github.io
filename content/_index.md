@@ -24,7 +24,6 @@ sections:
         <img src="img/landing_page_image.png" alt="DIGIT Lab Research">
         </div>
         </div>
-        {{< lab_stats extra_value="2" extra_label="NSF awards" >}}
 
 #  - block: markdown
 #    content:
