@@ -154,10 +154,10 @@ body.dark .pillar-list li:hover {
 }
 
 /*************************************************
- *  News list
+ *  List items (news, publications, wiki)
  **************************************************/
 
-.news-list .stream-item {
+.stream-item {
   padding: 1.1rem 1.25rem;
   margin: 0 0 0.75rem;
   border-radius: 10px;
@@ -186,6 +186,198 @@ body.dark .pillar-list li:hover {
 }
 
 /*************************************************
+ *  Page titles: short maroon rule under each
+ **************************************************/
+
+.universal-wrapper.pt-3 > h1,
+.article-container.pt-3 > h1,
+.home-section .section-heading h1 {
+  position: relative;
+  padding-bottom: 0.9rem;
+  margin-bottom: 1.5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 56px;
+    height: 3px;
+    border-radius: 3px;
+    background: $sta-primary;
+    transform: translateX(-50%);
+  }
+}
+
+// Article titles are left-aligned, so their rule is too
+.article-container.pt-3 > h1::after {
+  left: 0;
+  transform: none;
+}
+
+body.dark .universal-wrapper.pt-3 > h1::after,
+body.dark .article-container.pt-3 > h1::after,
+body.dark .home-section .section-heading h1::after {
+  background: $sta-dark-link;
+}
+
+/*************************************************
+ *  Article pages (news, publications, join, research)
+ **************************************************/
+
+.article-style {
+  img {
+    border-radius: 10px;
+  }
+
+  // Links underline from left to right on hover
+  a:not(.btn) {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s $digit-ease;
+
+    &:hover {
+      background-size: 100% 1px;
+    }
+  }
+
+  blockquote {
+    border-left: 3px solid $sta-primary;
+    background: rgba($sta-primary, 0.04);
+    border-radius: 0 8px 8px 0;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+.featured-image-wrapper img {
+  border-radius: 12px;
+}
+
+// PDF / Cite / DOI / Link buttons
+.btn-outline-primary.btn-page-header {
+  border-radius: 999px;
+  padding: 0.15rem 0.8rem;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s $digit-ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/*************************************************
+ *  Publications search and filters
+ **************************************************/
+
+#container-publications {
+  margin-top: 0.75rem;
+}
+
+.pub-filters,
+.filter-search {
+  border-radius: 8px !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:focus {
+    border-color: $sta-primary !important;
+    box-shadow: 0 0 0 3px rgba($sta-primary, 0.15) !important;
+  }
+}
+
+/*************************************************
+ *  People
+ **************************************************/
+
+.people-widget h2.mb-4 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
+
+  // Thin rules either side of each group heading
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(127, 127, 127, 0.25);
+  }
+}
+
+.people-person {
+  padding: 1rem 0.75rem 0.5rem;
+  border-radius: 14px;
+  transition: transform 0.3s $digit-ease, background 0.3s ease;
+
+  .avatar {
+    transition: transform 0.4s $digit-ease, box-shadow 0.4s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    background: rgba($sta-primary, 0.03);
+
+    .avatar {
+      transform: scale(1.04);
+      box-shadow: 0 0 0 4px #fff, 0 0 0 6px rgba($sta-primary, 0.55), 0 16px 30px -14px rgba(0, 0, 0, 0.45);
+    }
+  }
+
+  .network-icon a {
+    display: inline-block;
+    transition: transform 0.2s $digit-ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+body.dark .people-person:hover {
+  background: rgba(255, 255, 255, 0.03);
+
+  .avatar {
+    box-shadow: 0 0 0 4px #16181d, 0 0 0 6px rgba($sta-dark-link, 0.6), 0 16px 30px -14px rgba(0, 0, 0, 0.6);
+  }
+}
+
+/*************************************************
+ *  Contact
+ **************************************************/
+
+.wg-contact {
+  .fa-ul .fa-li,
+  .contact-icon,
+  i.fas,
+  i.fa {
+    color: $sta-primary;
+  }
+
+  #map {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(127, 127, 127, 0.2);
+  }
+}
+
+body.dark .wg-contact i.fas,
+body.dark .wg-contact i.fa {
+  color: $sta-dark-link;
+}
+
+/*************************************************
+ *  Footer
+ **************************************************/
+
+.page-footer {
+  border-top: 1px solid rgba(127, 127, 127, 0.15);
+  margin-top: 2rem;
+}
+
+/*************************************************
  *  Scroll reveal (classes added by motion.html)
  **************************************************/
 
@@ -200,8 +392,8 @@ body.dark .pillar-list li:hover {
   }
 }
 
-// News cards have their own hover transition; keep the fade-in too
-.news-list .stream-item.reveal {
+// List cards have their own hover transition; keep the fade-in too
+.stream-item.reveal {
   transition: opacity 0.7s ease, transform 0.5s $digit-ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 

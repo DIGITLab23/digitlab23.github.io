@@ -1,12 +1,21 @@
 {{/* Subtle motion: reveal content on scroll. */}}
 <script>
 (function () {
+  // Publications use an Isotope layout computed before web fonts finish loading,
+  // which leaves entries overlapping. Re-run the layout once fonts are ready.
+  if (document.fonts && window.jQuery) {
+    document.fonts.ready.then(function () {
+      var $pubs = jQuery('#container-publications');
+      if ($pubs.length && $pubs.data('isotope')) $pubs.isotope('layout');
+    });
+  }
+
   if (!('IntersectionObserver' in window)) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   // Fade elements in as they scroll into view
   var targets = document.querySelectorAll(
-    '.intro-text > *, .intro-figure, .home-section .section-heading, .stream-item, .cta-group'
+    '.intro-text > *, .intro-figure, .home-section .section-heading, .stream-item, .cta-group, .people-person'
   );
   var revealer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
