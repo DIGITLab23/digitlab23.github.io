@@ -1,0 +1,34 @@
+# Theme metadata
+name = "DIGIT"
+
+[light]
+  # Primary (maroon, matches the logo)
+  primary = "#7a1f2b"
+
+  # Menu
+  menu_primary = "#ffffff"
+  menu_text = "#2f3440"
+  menu_text_active = "#7a1f2b"
+  menu_title = "#1a1a1a"
+
+  # Home sections
+  home_section_odd = "rgb(255, 255, 255)"
+  home_section_even = "rgb(249, 248, 246)"
+
+[dark]
+  # Primary
+  primary = "#e8a0a8"
+
+  link = "#f0b4bb"
+  link_hover = "#ffd1d6"
+
+  # Menu
+  menu_primary = "#16181d"
+  menu_text = "rgba(255,255,255,0.7)"
+  menu_text_active = "#ffffff"
+  menu_title = "#ffffff"
+
+  # Home sections
+  background = "#16181d"
+  home_section_odd = "#16181d"
+  home_section_even = "#1b1e24"

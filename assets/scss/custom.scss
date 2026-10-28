@@ -1,0 +1,399 @@
+// DIGIT Lab: academic look with subtle motion, on top of the HugoBlox theme.
+// Colors come from data/themes/digit.toml; fonts are the theme's "minimal" set.
+// Scroll reveal lives in layouts/partials/hooks/body-end/motion.html.
+
+$digit-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+/*************************************************
+ *  Global polish
+ **************************************************/
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .section-heading h1 {
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: rgba($sta-primary, 0.18);
+}
+
+// Maroon logo disappears on the dark navbar, so render it white in dark mode
+body.dark .navbar-brand img {
+  filter: brightness(0) invert(1);
+}
+
+// Nav links: underline slides in on hover
+.navbar .nav-link {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.25rem;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s $digit-ease;
+  }
+
+  &:hover::after,
+  &.active::after {
+    transform: scaleX(1);
+  }
+}
+
+.page-header {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+/*************************************************
+ *  Intro: text + research diagram
+ **************************************************/
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+  padding: 1.5rem 0 0.5rem;
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $sta-primary;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+}
+
+body.dark .intro h1 {
+  color: inherit;
+}
+
+.intro-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.6s $digit-ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 991px) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .intro-figure {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+// Numbered research questions with a hover highlight
+.pillar-list {
+  list-style: none;
+  counter-reset: pillar;
+  padding-left: 0;
+  margin: 1.25rem 0 1.5rem;
+
+  li {
+    position: relative;
+    counter-increment: pillar;
+    padding: 0.7rem 0.9rem 0.7rem 3.1rem;
+    margin-bottom: 0.4rem;
+    border-left: 2px solid rgba(127, 127, 127, 0.2);
+    border-radius: 0 8px 8px 0;
+    line-height: 1.55;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s $digit-ease;
+
+    &::before {
+      content: "0" counter(pillar);
+      position: absolute;
+      left: 0.9rem;
+      top: 0.78rem;
+      font-family: $sta-font-mono, monospace;
+      font-size: 0.85rem;
+      color: $sta-primary;
+    }
+
+    &:hover {
+      transform: translateX(4px);
+      border-left-color: $sta-primary;
+      background: rgba($sta-primary, 0.05);
+    }
+  }
+}
+
+body.dark .pillar-list li::before {
+  color: $sta-dark-link;
+}
+
+body.dark .pillar-list li:hover {
+  border-left-color: $sta-dark-link;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/*************************************************
+ *  List items (news, publications, wiki)
+ **************************************************/
+
+.stream-item {
+  padding: 1.1rem 1.25rem;
+  margin: 0 0 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(127, 127, 127, 0.15);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s $digit-ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: rgba($sta-primary, 0.35);
+    box-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.35);
+  }
+
+  .ml-3 {
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  img {
+    object-fit: cover;
+    transition: transform 0.5s $digit-ease;
+  }
+
+  &:hover img {
+    transform: scale(1.06);
+  }
+}
+
+/*************************************************
+ *  Page titles: short maroon rule under each
+ **************************************************/
+
+.universal-wrapper.pt-3 > h1,
+.article-container.pt-3 > h1,
+.home-section .section-heading h1 {
+  position: relative;
+  padding-bottom: 0.9rem;
+  margin-bottom: 1.5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 56px;
+    height: 3px;
+    border-radius: 3px;
+    background: $sta-primary;
+    transform: translateX(-50%);
+  }
+}
+
+// Article titles are left-aligned, so their rule is too
+.article-container.pt-3 > h1::after {
+  left: 0;
+  transform: none;
+}
+
+body.dark .universal-wrapper.pt-3 > h1::after,
+body.dark .article-container.pt-3 > h1::after,
+body.dark .home-section .section-heading h1::after {
+  background: $sta-dark-link;
+}
+
+/*************************************************
+ *  Article pages (news, publications, join, research)
+ **************************************************/
+
+.article-style {
+  img {
+    border-radius: 10px;
+  }
+
+  // Links underline from left to right on hover
+  a:not(.btn) {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s $digit-ease;
+
+    &:hover {
+      background-size: 100% 1px;
+    }
+  }
+
+  blockquote {
+    border-left: 3px solid $sta-primary;
+    background: rgba($sta-primary, 0.04);
+    border-radius: 0 8px 8px 0;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+.featured-image-wrapper img {
+  border-radius: 12px;
+}
+
+// PDF / Cite / DOI / Link buttons
+.btn-outline-primary.btn-page-header {
+  border-radius: 999px;
+  padding: 0.15rem 0.8rem;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s $digit-ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/*************************************************
+ *  Publications search and filters
+ **************************************************/
+
+#container-publications {
+  margin-top: 0.75rem;
+}
+
+.pub-filters,
+.filter-search {
+  border-radius: 8px !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:focus {
+    border-color: $sta-primary !important;
+    box-shadow: 0 0 0 3px rgba($sta-primary, 0.15) !important;
+  }
+}
+
+/*************************************************
+ *  People
+ **************************************************/
+
+.people-widget h2.mb-4 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
+
+  // Thin rules either side of each group heading
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(127, 127, 127, 0.25);
+  }
+}
+
+.people-person {
+  padding: 1rem 0.75rem 0.5rem;
+  border-radius: 14px;
+  transition: transform 0.3s $digit-ease, background 0.3s ease;
+
+  .avatar {
+    transition: transform 0.4s $digit-ease, box-shadow 0.4s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    background: rgba($sta-primary, 0.03);
+
+    .avatar {
+      transform: scale(1.04);
+      box-shadow: 0 0 0 4px #fff, 0 0 0 6px rgba($sta-primary, 0.55), 0 16px 30px -14px rgba(0, 0, 0, 0.45);
+    }
+  }
+
+  .network-icon a {
+    display: inline-block;
+    transition: transform 0.2s $digit-ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+body.dark .people-person:hover {
+  background: rgba(255, 255, 255, 0.03);
+
+  .avatar {
+    box-shadow: 0 0 0 4px #16181d, 0 0 0 6px rgba($sta-dark-link, 0.6), 0 16px 30px -14px rgba(0, 0, 0, 0.6);
+  }
+}
+
+/*************************************************
+ *  Contact
+ **************************************************/
+
+.wg-contact {
+  .fa-ul .fa-li,
+  .contact-icon,
+  i.fas,
+  i.fa {
+    color: $sta-primary;
+  }
+
+  #map {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(127, 127, 127, 0.2);
+  }
+}
+
+body.dark .wg-contact i.fas,
+body.dark .wg-contact i.fa {
+  color: $sta-dark-link;
+}
+
+/*************************************************
+ *  Footer
+ **************************************************/
+
+.page-footer {
+  border-top: 1px solid rgba(127, 127, 127, 0.15);
+  margin-top: 2rem;
+}
+
+/*************************************************
+ *  Scroll reveal (classes added by motion.html)
+ **************************************************/
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s $digit-ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// List cards have their own hover transition; keep the fade-in too
+.stream-item.reveal {
+  transition: opacity 0.7s ease, transform 0.5s $digit-ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

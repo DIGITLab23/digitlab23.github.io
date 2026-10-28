@@ -8,19 +8,21 @@ sections:
   - block: markdown
     content: 
       text: |
-        <div style="padding: 2rem 0;">
-          <h1>DIGIT Lab</h1>
-          <img src="img/landing_page_image.png" alt="DIGIT Lab Research" style="float: right; margin: 0 0 10px 20px; width: 600px;">
-        
-          In the <u>D</u>esign <u>I</u>nnovation & <u>G</u>enerative <u>I</u>n<u>t</u>elligence (DIGIT) Lab, we study **how AI can design better materials, structures, and machines**. Our research focus extends beyond model performance and efficiency, exploring how AI can fundamentally advance design across four key dimensions: 
-
-          1. **Complexity:** How can AI unlock design complexities that are fundamentally inaccessible to traditional methods?
-          2. **Trustworthiness:** How can we develop AI-driven design methodologies that engineers can trust?
-          3. **Discoverability:** How can AI discover new knowledge that expands human understanding and guides design innovation? 
-          4. **Creativity:** How can AI enable or accelerate the discovery of "out-of-the-box" design solutions and become a true inventor?
-
-          Guided by these fundamental questions, we develop computational methodologies for design ideation, generative design, and design for X ("X" can represent manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.
-
+        <div class="intro">
+        <div class="intro-text">
+        <h1>DIGIT Lab</h1>
+        <p>In the <u>D</u>esign <u>I</u>nnovation &amp; <u>G</u>enerative <u>I</u>n<u>t</u>elligence (DIGIT) Lab, we study <strong>how AI can design better materials, structures, and machines</strong>. Our research focus extends beyond model performance and efficiency, exploring how AI can fundamentally advance design across four key dimensions:</p>
+        <ol class="pillar-list">
+        <li><strong>Complexity:</strong> How can AI unlock design complexities that are fundamentally inaccessible to traditional methods?</li>
+        <li><strong>Trustworthiness:</strong> How can we develop AI-driven design methodologies that engineers can trust?</li>
+        <li><strong>Discoverability:</strong> How can AI discover new knowledge that expands human understanding and guides design innovation?</li>
+        <li><strong>Creativity:</strong> How can AI enable or accelerate the discovery of "out-of-the-box" design solutions and become a true inventor?</li>
+        </ol>
+        <p>Guided by these fundamental questions, we develop computational methodologies for design ideation, generative design, and design for X ("X" can represent manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.</p>
+        </div>
+        <div class="intro-figure">
+        <img src="img/landing_page_image.png" alt="DIGIT Lab Research">
+        </div>
         </div>
 
 #  - block: markdown
@@ -53,6 +55,7 @@ sections:
     design:
       view: compact
       columns: '1'
+      css_class: news-list
 
   - block: markdown
     content:
