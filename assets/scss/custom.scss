@@ -90,13 +90,6 @@ body.dark .intro h1 {
   }
 }
 
-// Diagram has a white background; soften it in dark mode
-body.dark .intro-figure img {
-  background: #fff;
-  padding: 0.75rem;
-  opacity: 0.92;
-}
-
 @media (max-width: 991px) {
   .intro {
     grid-template-columns: 1fr;
