@@ -1,11 +1,8 @@
-// DIGIT Lab: modern, startup-style overrides on top of the HugoBlox theme.
+// DIGIT Lab: academic look with subtle motion, on top of the HugoBlox theme.
 // Colors and fonts come from data/themes/digit.toml and data/fonts/digit.toml.
+// Scroll reveal and stat count-up live in layouts/partials/hooks/body-end/motion.html.
 
-$digit-indigo: #6366f1;
-$digit-violet: #a855f7;
-$digit-cyan: #22d3ee;
-$digit-ink: #07080d;
-$digit-gradient: linear-gradient(100deg, $digit-indigo 0%, $digit-violet 45%, $digit-cyan 100%);
+$digit-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
 /*************************************************
  *  Global polish
@@ -13,60 +10,14 @@ $digit-gradient: linear-gradient(100deg, $digit-indigo 0%, $digit-violet 45%, $d
 
 body {
   -webkit-font-smoothing: antialiased;
-  letter-spacing: -0.005em;
 }
 
-h1, h2, h3, h4, .section-heading h1, .article-title {
-  letter-spacing: -0.025em;
+h1, h2, h3, .section-heading h1 {
+  letter-spacing: -0.01em;
 }
 
 ::selection {
-  background: rgba($digit-indigo, 0.3);
-}
-
-.text-gradient {
-  background: $digit-gradient;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-// Section headings: tighter and left-aligned feel with a mono eyebrow line
-.home-section .section-heading h1 {
-  font-weight: 700;
-  font-size: 2.1rem;
-}
-
-.home-section .section-heading p {
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0.75;
-}
-
-/*************************************************
- *  Navbar: translucent glass
- **************************************************/
-
-.page-header {
-  box-shadow: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.navbar,
-.page-header {
-  background: rgba(255, 255, 255, 0.78) !important;
-  backdrop-filter: saturate(180%) blur(14px);
-  -webkit-backdrop-filter: saturate(180%) blur(14px);
-}
-
-body.dark .page-header {
-  border-bottom-color: rgba(255, 255, 255, 0.08);
-}
-
-body.dark .navbar,
-body.dark .page-header {
-  background: rgba(10, 11, 16, 0.72) !important;
+  background: rgba($sta-primary, 0.18);
 }
 
 // Maroon logo disappears on the dark navbar, so render it white in dark mode
@@ -74,195 +25,132 @@ body.dark .navbar-brand img {
   filter: brightness(0) invert(1);
 }
 
-.navbar-brand {
-  font-family: $sta-font-heading, sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
+// Nav links: underline slides in on hover
 .navbar .nav-link {
-  font-weight: 500;
-  font-size: 0.92rem;
-}
-
-/*************************************************
- *  Buttons
- **************************************************/
-
-.btn-glow,
-.btn-ghost {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55em;
-  padding: 0.75em 1.5em;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-}
-
-.btn-glow {
-  color: #fff !important;
-  background: $digit-gradient;
-  background-size: 160% 100%;
-  border: 0;
-  box-shadow: 0 8px 30px -8px rgba($digit-violet, 0.65);
-
-  &:hover {
-    transform: translateY(-2px);
-    background-position: 100% 0;
-    box-shadow: 0 12px 40px -8px rgba($digit-cyan, 0.6);
-  }
-
-  i {
-    transition: transform 0.2s ease;
-  }
-
-  &:hover i {
-    transform: translateX(3px);
-  }
-}
-
-.btn-ghost {
-  color: inherit !important;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(127, 127, 127, 0.35);
-
-  &:hover {
-    transform: translateY(-2px);
-    border-color: $digit-cyan;
-  }
-}
-
-/*************************************************
- *  Hero (always dark)
- **************************************************/
-
-.home-section.hero-tech {
   position: relative;
-  overflow: hidden;
-  background: $digit-ink !important;
-  color: #e6e8f0;
-  padding: 8rem 0 4.5rem;
 
-  // Engineering-grid backdrop, faded at the edges
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
-    background-size: 56px 56px;
-    mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 40%, transparent 100%);
-    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 40%, transparent 100%);
-  }
-
-  // Soft color glows
   &::after {
     content: "";
     position: absolute;
-    inset: -20% -10% auto;
-    height: 90%;
-    background:
-      radial-gradient(40% 50% at 25% 30%, rgba($digit-indigo, 0.35), transparent 70%),
-      radial-gradient(35% 45% at 80% 20%, rgba($digit-cyan, 0.22), transparent 70%),
-      radial-gradient(30% 40% at 55% 70%, rgba($digit-violet, 0.18), transparent 70%);
-    filter: blur(20px);
-    animation: digit-drift 16s ease-in-out infinite alternate;
-    pointer-events: none;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.25rem;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s $digit-ease;
   }
 
-  .container {
-    position: relative;
-    z-index: 1;
-  }
-
-  a:not(.btn) {
-    color: #fff;
+  &:hover::after,
+  &.active::after {
+    transform: scaleX(1);
   }
 }
 
-.hero-tech-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: center;
-  animation: digit-rise 0.8s ease-out both;
+.page-header {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 }
 
-.hero-eyebrow {
-  display: inline-flex;
+/*************************************************
+ *  Intro: text + research diagram
+ **************************************************/
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 3rem;
   align-items: center;
-  gap: 0.6em;
-  padding: 0.35em 0.95em;
-  font-family: $sta-font-mono, monospace;
-  font-size: 0.78rem;
-  letter-spacing: 0.02em;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem 0 0.5rem;
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $sta-primary;
+  }
+
+  p {
+    line-height: 1.7;
+  }
 }
 
-.hero-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: $digit-cyan;
-  box-shadow: 0 0 0 0 rgba($digit-cyan, 0.7);
-  animation: digit-pulse 2s infinite;
+body.dark .intro h1 {
+  color: inherit;
 }
 
-.hero-tech-title {
-  margin: 1.4rem 0 1.2rem;
-  font-size: clamp(2.3rem, 5.6vw, 4.4rem);
-  line-height: 1.04;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  color: #fff;
+.intro-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.6s $digit-ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
-.hero-tech-lead {
-  max-width: 680px;
-  margin: 0 auto 2rem;
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: rgba(230, 232, 240, 0.72);
+// Diagram has a white background; soften it in dark mode
+body.dark .intro-figure img {
+  background: #fff;
+  padding: 0.75rem;
+  opacity: 0.92;
 }
 
-.hero-tech-ctas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
+@media (max-width: 991px) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .intro-figure {
+    max-width: 520px;
+    margin: 0 auto;
+  }
 }
 
-.hero-tech .btn-ghost {
-  color: #fff !important;
-  border-color: rgba(255, 255, 255, 0.22);
-}
+// Numbered research questions with a hover highlight
+.pillar-list {
+  list-style: none;
+  counter-reset: pillar;
+  padding-left: 0;
+  margin: 1.25rem 0 1.5rem;
 
-.hero-tags {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 2rem;
-
-  span {
-    font-family: $sta-font-mono, monospace;
-    font-size: 0.75rem;
-    padding: 0.25em 0.75em;
-    border-radius: 6px;
-    color: rgba(255, 255, 255, 0.6);
-    background: rgba(255, 255, 255, 0.05);
+  li {
+    position: relative;
+    counter-increment: pillar;
+    padding: 0.7rem 0.9rem 0.7rem 3.1rem;
+    margin-bottom: 0.4rem;
+    border-left: 2px solid rgba(127, 127, 127, 0.2);
+    border-radius: 0 8px 8px 0;
+    line-height: 1.55;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s $digit-ease;
 
     &::before {
-      content: "#";
-      color: $digit-cyan;
-      margin-right: 0.2em;
+      content: "0" counter(pillar);
+      position: absolute;
+      left: 0.9rem;
+      top: 0.78rem;
+      font-family: $sta-font-mono, monospace;
+      font-size: 0.85rem;
+      color: $sta-primary;
+    }
+
+    &:hover {
+      transform: translateX(4px);
+      border-left-color: $sta-primary;
+      background: rgba($sta-primary, 0.05);
     }
   }
+}
+
+body.dark .pillar-list li::before {
+  color: $sta-dark-link;
+}
+
+body.dark .pillar-list li:hover {
+  border-left-color: $sta-dark-link;
+  background: rgba(255, 255, 255, 0.04);
 }
 
 /*************************************************
@@ -272,46 +160,44 @@ body.dark .navbar-brand img {
 .lab-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 4rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 3rem;
+  border-top: 1px solid rgba(127, 127, 127, 0.2);
+  border-bottom: 1px solid rgba(127, 127, 127, 0.2);
 }
 
 .lab-stat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.6rem 0.5rem 0;
+  padding: 1.5rem 0.5rem;
 
   + .lab-stat {
-    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 1px solid rgba(127, 127, 127, 0.15);
   }
 }
 
 .lab-stat-value {
-  font-family: $sta-font-heading, sans-serif;
+  font-family: $sta-font-heading, serif;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1;
-  background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.55));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: $sta-primary;
+  font-variant-numeric: tabular-nums;
+}
+
+body.dark .lab-stat-value {
+  color: $sta-dark-link;
 }
 
 .lab-stat-label {
-  margin-top: 0.5rem;
-  font-family: $sta-font-mono, monospace;
-  font-size: 0.72rem;
+  margin-top: 0.45rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.1em;
+  opacity: 0.65;
 }
 
 @media (max-width: 767px) {
-  .home-section.hero-tech {
-    padding-top: 5.5rem;
-  }
-
   .lab-stats {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -319,93 +205,9 @@ body.dark .navbar-brand img {
   .lab-stat:nth-child(3) {
     border-left: 0;
   }
-}
 
-/*************************************************
- *  Research pillars (features block)
- **************************************************/
-
-.pillars .featurette {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.25rem;
-  margin: 0;
-  counter-reset: pillar;
-
-  > .section-heading,
-  > .col-md-12 {
-    grid-column: 1 / -1;
-    max-width: 100%;
-    margin-bottom: 1.5rem;
-  }
-
-  > .col-sm-4 {
-    position: relative;
-    max-width: 100%;
-    flex: none;
-    padding: 1.75rem 1.5rem;
-    text-align: left;
-    border-radius: 16px;
-    border: 1px solid rgba(127, 127, 127, 0.18);
-    background: rgba(127, 127, 127, 0.03);
-    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-    counter-increment: pillar;
-
-    &::after {
-      content: "0" counter(pillar);
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      font-family: $sta-font-mono, monospace;
-      font-size: 0.75rem;
-      opacity: 0.4;
-    }
-
-    &:hover {
-      transform: translateY(-4px);
-      border-color: rgba($digit-indigo, 0.55);
-      box-shadow: 0 20px 50px -20px rgba($digit-indigo, 0.45);
-    }
-  }
-
-  .featurette-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 46px;
-    height: 46px;
-    margin-bottom: 1.2rem;
-    border-radius: 12px;
-    font-size: 1.15rem;
-    color: #fff;
-    background: $digit-gradient;
-    box-shadow: 0 8px 24px -8px rgba($digit-violet, 0.6);
-  }
-
-  .section-subheading {
-    font-family: $sta-font-heading, sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .col-sm-4 p {
-    font-size: 0.95rem;
-    line-height: 1.55;
-    opacity: 0.75;
-    margin: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .pillars .featurette {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 575px) {
-  .pillars .featurette {
-    grid-template-columns: 1fr;
+  .lab-stat:nth-child(n + 3) {
+    border-top: 1px solid rgba(127, 127, 127, 0.15);
   }
 }
 
@@ -413,88 +215,58 @@ body.dark .navbar-brand img {
  *  News list
  **************************************************/
 
-.news-tech .stream-item {
-  padding: 1.25rem 1.25rem;
+.news-list .stream-item {
+  padding: 1.1rem 1.25rem;
   margin: 0 0 0.75rem;
-  border-radius: 14px;
+  border-radius: 10px;
   border: 1px solid rgba(127, 127, 127, 0.15);
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s $digit-ease;
 
   &:hover {
-    transform: translateX(4px);
-    border-color: rgba($digit-indigo, 0.5);
+    transform: translateY(-2px);
+    border-color: rgba($sta-primary, 0.35);
+    box-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.35);
+  }
+
+  .ml-3 {
+    overflow: hidden;
+    border-radius: 8px;
   }
 
   img {
-    border-radius: 10px;
     object-fit: cover;
+    transition: transform 0.5s $digit-ease;
   }
 
-  .article-date {
-    font-family: $sta-font-mono, monospace;
-    font-size: 0.75rem;
-    opacity: 0.7;
-  }
-}
-
-/*************************************************
- *  Closing call-to-action card
- **************************************************/
-
-.cta-card {
-  position: relative;
-  overflow: hidden;
-  padding: 4rem 2rem;
-  text-align: center;
-  border-radius: 24px;
-  color: #fff;
-  background:
-    radial-gradient(60% 80% at 15% 0%, rgba($digit-indigo, 0.55), transparent 70%),
-    radial-gradient(50% 70% at 90% 100%, rgba($digit-cyan, 0.35), transparent 70%),
-    $digit-ink;
-
-  h2 {
-    margin: 1.2rem 0 0.6rem;
-    font-size: clamp(1.7rem, 3.4vw, 2.5rem);
-    font-weight: 700;
-    color: #fff;
-  }
-
-  p {
-    margin-bottom: 1.8rem;
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  .btn-ghost {
-    color: #fff !important;
-    border-color: rgba(255, 255, 255, 0.25);
+  &:hover img {
+    transform: scale(1.06);
   }
 }
 
 /*************************************************
- *  Motion
+ *  Scroll reveal (classes added by motion.html)
  **************************************************/
 
-@keyframes digit-rise {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: none; }
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s $digit-ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-@keyframes digit-drift {
-  from { transform: translate3d(-3%, 0, 0) scale(1); }
-  to { transform: translate3d(3%, 4%, 0) scale(1.08); }
-}
-
-@keyframes digit-pulse {
-  0% { box-shadow: 0 0 0 0 rgba($digit-cyan, 0.6); }
-  70% { box-shadow: 0 0 0 8px rgba($digit-cyan, 0); }
-  100% { box-shadow: 0 0 0 0 rgba($digit-cyan, 0); }
+// News cards have their own hover transition; keep the fade-in too
+.news-list .stream-item.reveal {
+  transition: opacity 0.7s ease, transform 0.5s $digit-ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-tech::after,
-  .hero-tech-inner,
-  .hero-dot {
-    animation: none !important;
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

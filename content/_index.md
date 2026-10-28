@@ -5,49 +5,39 @@ date: 2022-10-24
 type: landing
 
 sections:
-  # Hero: always dark, with grid + glow background (styled in assets/scss/custom.scss)
   - block: markdown
-    content:
+    content: 
       text: |
-        <div class="hero-tech-inner">
-        <span class="hero-eyebrow"><span class="hero-dot"></span><span class="d-none d-md-inline">Design Innovation &amp; Generative Intelligence Lab</span><span class="d-md-none">DIGIT Lab</span> · Texas A&amp;M</span>
-        <h1 class="hero-tech-title">AI that designs better <span class="text-gradient">materials, structures &amp; machines</span>.</h1>
-        <p class="hero-tech-lead">The DIGIT Lab builds AI that goes beyond model performance and efficiency to make engineering design more complex, trustworthy, discoverable and creative.</p>
-        <div class="hero-tech-ctas">
-        <a class="btn btn-glow" href="research/">Explore our research <i class="fas fa-arrow-right"></i></a>
-        <a class="btn btn-ghost" href="join/">Join the lab</a>
+        <div class="intro">
+        <div class="intro-text">
+        <h1>DIGIT Lab</h1>
+        <p>In the <u>D</u>esign <u>I</u>nnovation &amp; <u>G</u>enerative <u>I</u>n<u>t</u>elligence (DIGIT) Lab, we study <strong>how AI can design better materials, structures, and machines</strong>. Our research focus extends beyond model performance and efficiency, exploring how AI can fundamentally advance design across four key dimensions:</p>
+        <ol class="pillar-list">
+        <li><strong>Complexity:</strong> How can AI unlock design complexities that are fundamentally inaccessible to traditional methods?</li>
+        <li><strong>Trustworthiness:</strong> How can we develop AI-driven design methodologies that engineers can trust?</li>
+        <li><strong>Discoverability:</strong> How can AI discover new knowledge that expands human understanding and guides design innovation?</li>
+        <li><strong>Creativity:</strong> How can AI enable or accelerate the discovery of "out-of-the-box" design solutions and become a true inventor?</li>
+        </ol>
+        <p>Guided by these fundamental questions, we develop computational methodologies for design ideation, generative design, and design for X ("X" can represent manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.</p>
         </div>
-        <div class="hero-tags"><span>design ideation</span><span>generative design</span><span>design for X</span></div>
+        <div class="intro-figure">
+        <img src="img/landing_page_image.png" alt="DIGIT Lab Research">
+        </div>
+        </div>
         {{< lab_stats extra_value="2" extra_label="NSF awards" >}}
-        </div>
-    design:
-      css_class: hero-tech
 
-  # Research pillars as cards
-  - block: features
-    content:
-      title: Four questions drive our work
-      subtitle: We develop computational methods for design ideation, generative design, and design for X (manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.
-      items:
-        - name: Complexity
-          icon: diagram-project
-          icon_pack: fas
-          description: How can AI unlock design complexities that are fundamentally inaccessible to traditional methods?
-        - name: Trustworthiness
-          icon: shield-halved
-          icon_pack: fas
-          description: How can we develop AI-driven design methodologies that engineers can trust?
-        - name: Discoverability
-          icon: magnifying-glass-chart
-          icon_pack: fas
-          description: How can AI discover new knowledge that expands human understanding and guides design innovation?
-        - name: Creativity
-          icon: lightbulb
-          icon_pack: fas
-          description: How can AI enable "out-of-the-box" design solutions and become a true inventor?
-    design:
-      css_class: pillars
+#  - block: markdown
+#    content:
+#      title: Join Us!
+#      subtitle: ''
+#      text: |
+#        <br>
+#        
+#        Are you passionate about pushing the boundaries of AI and machine learning for engineering design? At the DIGIT Lab, we are committed to research in this exciting field---and you can be part of it! We have openings for **fully-funded Ph.D. positions** starting Fall 2025, and we’re looking for enthusiastic individuals to join our team! 
+#        
+#        [Learn More >](/join/)
 
+  
   - block: collection
     content:
       title: Latest News
@@ -66,22 +56,14 @@ sections:
     design:
       view: compact
       columns: '1'
-      css_class: news-tech
+      css_class: news-list
 
-  # Closing call-to-action
   - block: markdown
     content:
+      title:
+      subtitle:
       text: |
-        <div class="cta-card">
-        <span class="hero-eyebrow">// We're building the team</span>
-        <h2>Help turn AI into an engineering inventor.</h2>
-        <p>Meet the people behind the research, or find out how to join us.</p>
-        <div class="hero-tech-ctas">
-        <a class="btn btn-glow" href="people/">Meet the team <i class="fas fa-arrow-right"></i></a>
-        <a class="btn btn-ghost" href="join/">Open positions</a>
-        </div>
-        </div>
+        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
     design:
       columns: '1'
-      css_class: cta-section
 ---
