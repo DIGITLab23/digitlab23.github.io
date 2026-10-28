@@ -1,0 +1,18 @@
+{{/* Lab stats strip: counts publications and people at build time. */}}
+{{/* Usage: {{< lab_stats extra_value="2" extra_label="NSF awards" >}} */}}
+{{ $pubs := len (where site.RegularPages "Section" "publication") }}
+{{ $members := 0 }}
+{{ $alumni := 0 }}
+{{ range where site.Pages "Section" "authors" }}
+  {{ with .Params.user_groups }}
+    {{ $is_alum := false }}
+    {{ range . }}{{ if eq (trim . " ") "Alumni" }}{{ $is_alum = true }}{{ end }}{{ end }}
+    {{ if $is_alum }}{{ $alumni = add $alumni 1 }}{{ else }}{{ $members = add $members 1 }}{{ end }}
+  {{ end }}
+{{ end }}
+<div class="lab-stats">
+  <div class="lab-stat"><span class="lab-stat-value">{{ $pubs }}</span><span class="lab-stat-label">Publications</span></div>
+  <div class="lab-stat"><span class="lab-stat-value">{{ $members }}</span><span class="lab-stat-label">Researchers</span></div>
+  <div class="lab-stat"><span class="lab-stat-value">{{ $alumni }}</span><span class="lab-stat-label">Alumni</span></div>
+  {{ with .Get "extra_value" }}<div class="lab-stat"><span class="lab-stat-value">{{ . }}</span><span class="lab-stat-label">{{ $.Get "extra_label" }}</span></div>{{ end }}
+</div>

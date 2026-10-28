@@ -6,11 +6,11 @@
 # Appearance
 
 appearance:
-  theme_day: minimal
-  theme_night: minimal
+  theme_day: digit
+  theme_night: digit
   day_night: true
-  font: minimal  # can be minimal, classic, rose, mr robot, native
-  font_size: L
+  font: digit  # can be minimal, classic, rose, mr robot, native
+  font_size: M
 
 # SEO
 
@@ -19,7 +19,7 @@ marketing:
     site_type: Organization
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
+    description: 'DIGIT Lab at Texas A&M University: AI that designs better materials, structures, and machines.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''

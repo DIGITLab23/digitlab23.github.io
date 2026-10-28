@@ -1,0 +1,500 @@
+// DIGIT Lab: modern, startup-style overrides on top of the HugoBlox theme.
+// Colors and fonts come from data/themes/digit.toml and data/fonts/digit.toml.
+
+$digit-indigo: #6366f1;
+$digit-violet: #a855f7;
+$digit-cyan: #22d3ee;
+$digit-ink: #07080d;
+$digit-gradient: linear-gradient(100deg, $digit-indigo 0%, $digit-violet 45%, $digit-cyan 100%);
+
+/*************************************************
+ *  Global polish
+ **************************************************/
+
+body {
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.005em;
+}
+
+h1, h2, h3, h4, .section-heading h1, .article-title {
+  letter-spacing: -0.025em;
+}
+
+::selection {
+  background: rgba($digit-indigo, 0.3);
+}
+
+.text-gradient {
+  background: $digit-gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+// Section headings: tighter and left-aligned feel with a mono eyebrow line
+.home-section .section-heading h1 {
+  font-weight: 700;
+  font-size: 2.1rem;
+}
+
+.home-section .section-heading p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.75;
+}
+
+/*************************************************
+ *  Navbar: translucent glass
+ **************************************************/
+
+.page-header {
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.navbar,
+.page-header {
+  background: rgba(255, 255, 255, 0.78) !important;
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+}
+
+body.dark .page-header {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .navbar,
+body.dark .page-header {
+  background: rgba(10, 11, 16, 0.72) !important;
+}
+
+// Maroon logo disappears on the dark navbar, so render it white in dark mode
+body.dark .navbar-brand img {
+  filter: brightness(0) invert(1);
+}
+
+.navbar-brand {
+  font-family: $sta-font-heading, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  font-size: 0.92rem;
+}
+
+/*************************************************
+ *  Buttons
+ **************************************************/
+
+.btn-glow,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  padding: 0.75em 1.5em;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn-glow {
+  color: #fff !important;
+  background: $digit-gradient;
+  background-size: 160% 100%;
+  border: 0;
+  box-shadow: 0 8px 30px -8px rgba($digit-violet, 0.65);
+
+  &:hover {
+    transform: translateY(-2px);
+    background-position: 100% 0;
+    box-shadow: 0 12px 40px -8px rgba($digit-cyan, 0.6);
+  }
+
+  i {
+    transition: transform 0.2s ease;
+  }
+
+  &:hover i {
+    transform: translateX(3px);
+  }
+}
+
+.btn-ghost {
+  color: inherit !important;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(127, 127, 127, 0.35);
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: $digit-cyan;
+  }
+}
+
+/*************************************************
+ *  Hero (always dark)
+ **************************************************/
+
+.home-section.hero-tech {
+  position: relative;
+  overflow: hidden;
+  background: $digit-ink !important;
+  color: #e6e8f0;
+  padding: 8rem 0 4.5rem;
+
+  // Engineering-grid backdrop, faded at the edges
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 40%, transparent 100%);
+  }
+
+  // Soft color glows
+  &::after {
+    content: "";
+    position: absolute;
+    inset: -20% -10% auto;
+    height: 90%;
+    background:
+      radial-gradient(40% 50% at 25% 30%, rgba($digit-indigo, 0.35), transparent 70%),
+      radial-gradient(35% 45% at 80% 20%, rgba($digit-cyan, 0.22), transparent 70%),
+      radial-gradient(30% 40% at 55% 70%, rgba($digit-violet, 0.18), transparent 70%);
+    filter: blur(20px);
+    animation: digit-drift 16s ease-in-out infinite alternate;
+    pointer-events: none;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  a:not(.btn) {
+    color: #fff;
+  }
+}
+
+.hero-tech-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  animation: digit-rise 0.8s ease-out both;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0.35em 0.95em;
+  font-family: $sta-font-mono, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: $digit-cyan;
+  box-shadow: 0 0 0 0 rgba($digit-cyan, 0.7);
+  animation: digit-pulse 2s infinite;
+}
+
+.hero-tech-title {
+  margin: 1.4rem 0 1.2rem;
+  font-size: clamp(2.3rem, 5.6vw, 4.4rem);
+  line-height: 1.04;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.hero-tech-lead {
+  max-width: 680px;
+  margin: 0 auto 2rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: rgba(230, 232, 240, 0.72);
+}
+
+.hero-tech-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.hero-tech .btn-ghost {
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+
+  span {
+    font-family: $sta-font-mono, monospace;
+    font-size: 0.75rem;
+    padding: 0.25em 0.75em;
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.05);
+
+    &::before {
+      content: "#";
+      color: $digit-cyan;
+      margin-right: 0.2em;
+    }
+  }
+}
+
+/*************************************************
+ *  Stats strip (lab_stats shortcode)
+ **************************************************/
+
+.lab-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lab-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.6rem 0.5rem 0;
+
+  + .lab-stat {
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+.lab-stat-value {
+  font-family: $sta-font-heading, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.55));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lab-stat-label {
+  margin-top: 0.5rem;
+  font-family: $sta-font-mono, monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 767px) {
+  .home-section.hero-tech {
+    padding-top: 5.5rem;
+  }
+
+  .lab-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lab-stat:nth-child(3) {
+    border-left: 0;
+  }
+}
+
+/*************************************************
+ *  Research pillars (features block)
+ **************************************************/
+
+.pillars .featurette {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 0;
+  counter-reset: pillar;
+
+  > .section-heading,
+  > .col-md-12 {
+    grid-column: 1 / -1;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  > .col-sm-4 {
+    position: relative;
+    max-width: 100%;
+    flex: none;
+    padding: 1.75rem 1.5rem;
+    text-align: left;
+    border-radius: 16px;
+    border: 1px solid rgba(127, 127, 127, 0.18);
+    background: rgba(127, 127, 127, 0.03);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    counter-increment: pillar;
+
+    &::after {
+      content: "0" counter(pillar);
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      font-family: $sta-font-mono, monospace;
+      font-size: 0.75rem;
+      opacity: 0.4;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: rgba($digit-indigo, 0.55);
+      box-shadow: 0 20px 50px -20px rgba($digit-indigo, 0.45);
+    }
+  }
+
+  .featurette-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    margin-bottom: 1.2rem;
+    border-radius: 12px;
+    font-size: 1.15rem;
+    color: #fff;
+    background: $digit-gradient;
+    box-shadow: 0 8px 24px -8px rgba($digit-violet, 0.6);
+  }
+
+  .section-subheading {
+    font-family: $sta-font-heading, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .col-sm-4 p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    opacity: 0.75;
+    margin: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .pillars .featurette {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
+  .pillars .featurette {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*************************************************
+ *  News list
+ **************************************************/
+
+.news-tech .stream-item {
+  padding: 1.25rem 1.25rem;
+  margin: 0 0 0.75rem;
+  border-radius: 14px;
+  border: 1px solid rgba(127, 127, 127, 0.15);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    transform: translateX(4px);
+    border-color: rgba($digit-indigo, 0.5);
+  }
+
+  img {
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .article-date {
+    font-family: $sta-font-mono, monospace;
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
+}
+
+/*************************************************
+ *  Closing call-to-action card
+ **************************************************/
+
+.cta-card {
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 24px;
+  color: #fff;
+  background:
+    radial-gradient(60% 80% at 15% 0%, rgba($digit-indigo, 0.55), transparent 70%),
+    radial-gradient(50% 70% at 90% 100%, rgba($digit-cyan, 0.35), transparent 70%),
+    $digit-ink;
+
+  h2 {
+    margin: 1.2rem 0 0.6rem;
+    font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+    font-weight: 700;
+    color: #fff;
+  }
+
+  p {
+    margin-bottom: 1.8rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .btn-ghost {
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+/*************************************************
+ *  Motion
+ **************************************************/
+
+@keyframes digit-rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes digit-drift {
+  from { transform: translate3d(-3%, 0, 0) scale(1); }
+  to { transform: translate3d(3%, 4%, 0) scale(1.08); }
+}
+
+@keyframes digit-pulse {
+  0% { box-shadow: 0 0 0 0 rgba($digit-cyan, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba($digit-cyan, 0); }
+  100% { box-shadow: 0 0 0 0 rgba($digit-cyan, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-tech::after,
+  .hero-tech-inner,
+  .hero-dot {
+    animation: none !important;
+  }
+}
