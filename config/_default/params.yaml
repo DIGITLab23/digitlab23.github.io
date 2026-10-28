@@ -9,8 +9,8 @@ appearance:
   theme_day: digit
   theme_night: digit
   day_night: true
-  font: digit  # can be minimal, classic, rose, mr robot, native
-  font_size: M
+  font: minimal  # can be minimal, classic, rose, mr robot, native
+  font_size: L
 
 # SEO
 
