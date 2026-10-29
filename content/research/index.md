@@ -37,6 +37,6 @@ Second, we want to keep humans at the center of the design process by addressing
   </div>
 </div>
 
-We pursue these questions by developing computational methods (machine learning, generative modeling, probabilistic modeling, uncertainty quantification, and optimization), grounded in mechanics and materials knowledge, to design physical systems across engineering domains.
+We pursue these questions by developing computational methods for generative design and design under uncertainty, drawing on machine learning (especially generative modeling), probabilistic modeling and uncertainty quantification, and optimization. Often in collaboration with experts in mechanics, materials, chemistry, and manufacturing, we apply these methods to problems ranging from aerodynamic shapes and active structures to engineered materials (e.g., metamaterials, polymers, and 2D materials).
 
 For more information, you can explore our [**paper collection**](/publication/) or check out our [**open-source code**](https://www.github.com/DIGITLab23).
