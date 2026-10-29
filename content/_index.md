@@ -8,33 +8,24 @@ sections:
   - block: markdown
     content: 
       text: |
-        <div class="intro">
-        <div class="intro-text">
-        <h1>DIGIT Lab</h1>
-        <p>In the <u>D</u>esign <u>I</u>nnovation &amp; <u>G</u>enerative <u>I</u>n<u>t</u>elligence (DIGIT) Lab, we study <strong>how AI can design better materials, structures, and machines</strong>. Our research focus extends beyond model performance and efficiency, exploring how AI can fundamentally advance design across four key dimensions:</p>
-        <ol class="pillar-list">
-        <li><strong>Complexity:</strong> How can AI unlock design complexities that are fundamentally inaccessible to traditional methods?</li>
-        <li><strong>Trustworthiness:</strong> How can we develop AI-driven design methodologies that engineers can trust?</li>
-        <li><strong>Discoverability:</strong> How can AI discover new knowledge that expands human understanding and guides design innovation?</li>
-        <li><strong>Creativity:</strong> How can AI enable or accelerate the discovery of "out-of-the-box" design solutions and become a true inventor?</li>
-        </ol>
-        <p>Guided by these fundamental questions, we develop computational methodologies for design ideation, generative design, and design for X ("X" can represent manufacturing, sustainability, reliability, and beyond) across diverse engineering domains.</p>
-        </div>
-        <div class="intro-figure">
-        <img src="img/landing_page_image.png" alt="DIGIT Lab Research">
-        </div>
+        <div style="padding: 2rem 0;">
+          <h1>DIGIT Lab</h1>
+          <img src="img/landing_figure.svg" alt="A designer at the center of a design space that AI expands, with trust and discovery flowing back to people" style="float: right; margin: 0 0 10px 20px; width: 600px;">
+        
+          In the <u>D</u>esign <u>I</u>nnovation & <u>G</u>enerative <u>I</u>n<u>t</u>elligence (DIGIT) Lab, we answer this overarching question: **How can AI augment our ability to design better materials, structures, and machines?** Our work has two sides. First, we leverage AI to push the limits of what can be designed. This involves unlocking design complexity beyond the capability of traditional methods and enabling the discovery of "outside-the-box" solutions. Meanwhile, we keep people at the center of this process by making AI-driven design trustworthy to engineers and turning what AI learns into knowledge that makes us better designers.
+
+          Toward these goals, we develop methodologies for designing physical systems across diverse engineering domains.
+
         </div>
 
-#  - block: markdown
-#    content:
-#      title: Join Us!
-#      subtitle: ''
-#      text: |
-#        <br>
-#        
-#        Are you passionate about pushing the boundaries of AI and machine learning for engineering design? At the DIGIT Lab, we are committed to research in this exciting field---and you can be part of it! We have openings for **fully-funded Ph.D. positions** starting Fall 2025, and we’re looking for enthusiastic individuals to join our team! 
-#        
-#        [Learn More >](/join/)
+  - block: markdown
+    content:
+      title: Join Us!
+      subtitle: ''
+      text: |
+        <br>
+        
+        Are you passionate about pushing the boundaries of AI and machine learning for engineering design? We have openings for **fully-funded Ph.D. positions** starting Fall 2027, and we’re looking for enthusiastic individuals to [join our team](/join/)! 
 
   
   - block: collection
@@ -55,14 +46,13 @@ sections:
     design:
       view: compact
       columns: '1'
-      css_class: news-list
 
   - block: markdown
     content:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
+        {{% cta cta_link="./people/" cta_text="Meet the Team" %}}
     design:
       columns: '1'
 ---
