@@ -146,6 +146,53 @@ body.dark .pillar-list li:hover {
   background: rgba(255, 255, 255, 0.04);
 }
 
+// Research page: the four key elements as boxes, two per row
+.research-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.75rem;
+}
+
+.research-box {
+  padding: 1.1rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid rgba(127, 127, 127, 0.2);
+  border-top: 3px solid $sta-primary;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s $digit-ease;
+
+  h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: $sta-primary;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+body.dark .research-box {
+  border-top-color: $sta-dark-link;
+
+  h4 {
+    color: $sta-dark-link;
+  }
+}
+
+@media (max-width: 767px) {
+  .research-boxes {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*************************************************
  *  List items (news, publications, wiki)
  **************************************************/
