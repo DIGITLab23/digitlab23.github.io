@@ -9,7 +9,7 @@ banner:
 
 ![A designer at the center of a design space that AI expands, with trust and knowledge flowing back to people](/img/landing_figure.svg)
 
-Research in the DIGIT Lab is driven by one overarching question: **How can AI augment our ability to design better materials, structures, and machines?** Our work focuses on two sides of AI-driven design.
+Research in the DIGIT Lab is driven by one overarching question: **How can AI augment our ability to design better materials, structures, and engineered systems?** Our work focuses on two sides of AI-driven design.
 
 First, we use AI to push the limits of what can be designed, centered on two challenges:
 
@@ -37,6 +37,6 @@ Second, we want to keep humans at the center of the design process by addressing
   </div>
 </div>
 
-We pursue these questions in the context of designing physical systems across diverse engineering domains.
+We pursue these questions by developing computational methods (machine learning, generative modeling, probabilistic modeling, uncertainty quantification, and optimization), grounded in mechanics and materials knowledge, to design physical systems across engineering domains.
 
 For more information, you can explore our [**paper collection**](/publication/) or check out our [**open-source code**](https://www.github.com/DIGITLab23).
